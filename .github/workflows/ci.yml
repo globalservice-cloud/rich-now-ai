@@ -1,0 +1,85 @@
+name: CI (Validate → Release Gates)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "ai/outputs/**"
+      - "ai/schemas/**"
+      - ".github/workflows/**"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "ai/outputs/**"
+      - "ai/schemas/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: AI Flow - Validate Schemas
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 18 }
+      - name: Install validator deps
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm i ajv@8 ajv-formats@2 --no-audit --no-fund
+      - name: Validate JSON outputs against schemas
+        run: |
+          node --input-type=module - <<'NODE'
+          import fs from 'fs';
+          import path from 'path';
+          import Ajv from 'ajv';
+          import addFormats from 'ajv-formats';
+          const OUT='ai/outputs', SCHEMA='ai/schemas';
+          const ex=p=>fs.existsSync(p);
+          const ls=d=>ex(d)?fs.readdirSync(d).filter(f=>f.endsWith('.json')):[];
+          const ajv=new Ajv({allErrors:true,strict:false}); addFormats(ajv);
+          const files=ls(OUT);
+          if(files.length===0){ console.log('🟡 ai/outputs/ 空，視為通過'); process.exit(0); }
+          let failed=false;
+          for(const f of files){
+            const data=JSON.parse(fs.readFileSync(path.join(OUT,f),'utf8'));
+            const schemaPath=path.join(SCHEMA,f.replace(/\.json$/,'.schema.json'));
+            if(!ex(schemaPath)){ console.log(`⚠️ 無 schema：${schemaPath}（略過）`); continue; }
+            const schema=JSON.parse(fs.readFileSync(schemaPath,'utf8'));
+            const validate=ajv.compile(schema);
+            const ok=validate(data);
+            if(ok) console.log(`✅ ${f} passed`);
+            else{ failed=true; console.error(`❌ ${f} failed`);
+              for(const e of validate.errors) console.error(`  - ${(e.instancePath||'/')}: ${e.message}`);
+              console.log(`::error file=ai/outputs/${f}::Schema validation failed`);
+            }
+          }
+          process.exit(failed?1:0);
+          NODE
+
+  gates:
+    name: Release Gates
+    needs: [validate]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 18 }
+      - name: Run gates
+        run: |
+          node --input-type=module - <<'NODE'
+          import fs from 'fs';
+          const p='ai/outputs/release-gates.json';
+          if(!fs.existsSync(p)){ console.log('🟡 無 release-gates.json，視為通過'); process.exit(0); }
+          const g=JSON.parse(fs.readFileSync(p,'utf8'));
+          const req=['dataQuality','tests','slo','signoff','flagStrategy'];
+          for(const k of req){ if(!(k in g)) { console.error(`❌ 缺少鍵：${k}`); process.exit(1);} }
+          const okStrategy=new Set(['gradual-rollout','full','canary']);
+          if(!okStrategy.has(String(g.flagStrategy))){
+            console.error('❌ flagStrategy invalid:', g.flagStrategy); process.exit(1);
+          }
+          console.log('✅ All release gates passed.');
+          NODE
