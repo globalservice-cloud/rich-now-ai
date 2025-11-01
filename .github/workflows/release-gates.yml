@@ -1,1 +1,78 @@
-# (貼上我上面給你的第 3 支 YAML 的完整內容)
+name: Release Gates
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "ai/outputs/release-gates.json"
+      - ".github/workflows/release-gates.yml"
+  workflow_dispatch:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "ai/outputs/release-gates.json"
+      - ".github/workflows/release-gates.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Show workspace & list files (debug)
+        run: |
+          pwd
+          echo "---- tree ai ----"
+          ls -lah ai || true
+          echo "---- tree ai/outputs ----"
+          ls -lah ai/outputs || true
+
+      - name: Print gates JSON (debug)
+        run: |
+          if [ -f ai/outputs/release-gates.json ]; then
+            echo "Found ai/outputs/release-gates.json"
+            cat ai/outputs/release-gates.json
+          else
+            echo "::error file=ai/outputs/release-gates.json::release-gates.json not found"
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Validate gates
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'ai/outputs/release-gates.json';
+          const raw = fs.readFileSync(path,'utf8');
+          let gates;
+          try { gates = JSON.parse(raw); } catch(e){
+            console.error('::error ::JSON parse error:', e.message);
+            process.exit(1);
+          }
+          const required = ['dataQuality','tests','slo','signoff','flagStrategy'];
+          const miss = required.filter(k => !(k in gates));
+          if (miss.length){
+            console.error(`::error ::Missing keys: ${miss.join(', ')}`);
+            process.exit(1);
+          }
+          const booleans = ['dataQuality','tests','slo','signoff'];
+          const falsy = booleans.filter(k => gates[k] !== true);
+          if (falsy.length){
+            console.error(`::error ::Gates not passed: ${falsy.join(', ')}`);
+            process.exit(1);
+          }
+          const okStrategies = new Set(['gradual-rollout','full','canary']);
+          if (!okStrategies.has(String(gates.flagStrategy))) {
+            console.error('::error ::flagStrategy invalid:', gates.flagStrategy);
+            process.exit(1);
+          }
+          console.log('✅ All release gates passed.');
+          NODE
