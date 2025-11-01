@@ -1,1 +1,55 @@
-# (貼上我上面給你的第 2 支 YAML 的完整內容)
+name: Weekly Status Report
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"   # 週一 09:00 台北 (UTC+8)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate STATUS.md (CJS)
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const out = path.join('ai','outputs');
+          const load = f => { try { return JSON.parse(fs.readFileSync(path.join(out,f),'utf8')) } catch { return null } };
+          const rfc   = load('rfc.json');
+          const adr   = load('adr.json');
+          const qa    = load('qa-report.json');
+          const gates = load('release-gates.json');
+
+          const lines = [];
+          lines.push('# Weekly Status');
+          lines.push('*Generated:* '+new Date().toISOString());
+          if(rfc){ lines.push('## RFC','- **Title**: '+(rfc.title||''),'- **Milestones**: '+JSON.stringify(rfc.milestones||[])); }
+          if(adr){ lines.push('## ADR','- **Decision**: '+(adr.decision||'')); }
+          if(qa){  lines.push('## QA','- **Coverage**: '+qa.coverage+'%','- **Result**: '+qa.result); }
+          if(gates){
+            lines.push('## Release Gates',
+              '- dataQuality: '+gates.dataQuality,
+              '- tests: '+gates.tests,
+              '- slo: '+gates.slo,
+              '- signoff: '+gates.signoff,
+              '- flagStrategy: '+gates.flagStrategy);
+          }
+          fs.writeFileSync('STATUS.md', lines.join('\n'));
+          console.log('✅ STATUS.md generated');
+          NODE
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add STATUS.md
+          git diff --quiet && echo "No changes" || (git commit -m "chore(report): weekly STATUS.md" && git push)
