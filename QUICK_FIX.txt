@@ -43,3 +43,4 @@ iCloud Drive 適合：
 Xcode 需要快速、頻繁地訪問文件。iCloud 同步延遲會導致超時。
 
 建議：在本地開發，用 Git 備份到 GitHub/iCloud。
+// trigger ci
