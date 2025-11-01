@@ -2,13 +2,21 @@ name: AI Flow - Validate Schemas
 
 on:
   push:
+    branches: [ main ]
     paths:
       - "ai/outputs/**"
       - "ai/schemas/**"
+      - ".github/workflows/ai-flow-validate.yml"
   pull_request:
+    branches: [ main ]
     paths:
       - "ai/outputs/**"
       - "ai/schemas/**"
+      - ".github/workflows/ai-flow-validate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   validate:
@@ -16,66 +24,55 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: 18
 
       - name: Install validator deps
         run: |
           npm init -y >/dev/null 2>&1 || true
-          npm i ajv@8 ajv-formats@3 --no-audit --no-fund
+          npm i ajv@8 ajv-formats@2 --no-audit --no-fund
 
       - name: Validate JSON outputs against schemas
         run: |
-          node - <<'NODE'
+          node --input-type=module - <<'NODE'
           import fs from 'fs';
           import path from 'path';
           import Ajv from 'ajv';
           import addFormats from 'ajv-formats';
 
-          const base = 'ai';
-          const outputsDir = path.join(base, 'outputs');
-          const schemasDir = path.join(base, 'schemas');
+          const OUT = 'ai/outputs';
+          const SCHEMA = 'ai/schemas';
+          const exists = p => fs.existsSync(p);
+          const list = dir => (exists(dir) ? fs.readdirSync(dir) : []).filter(f => f.endsWith('.json'));
 
           const ajv = new Ajv({ allErrors: true, strict: false });
           addFormats(ajv);
 
-          function exists(p){ try{ fs.accessSync(p); return true; } catch { return false; } }
-
-          if(!exists(outputsDir)) {
-            console.log('⚠️  ai/outputs/ 不存在，無檔可驗證，直接通過');
-            process.exit(0);
-          }
-
-          const files = fs.readdirSync(outputsDir).filter(f => f.endsWith('.json'));
-          if(files.length === 0){
-            console.log('⚠️  ai/outputs/ 空白，無檔可驗證，直接通過');
-            process.exit(0);
+          const files = list(OUT);
+          if (files.length === 0) {
+            console.log('🟡 ai/outputs/ 空，直接視為通過'); process.exit(0);
           }
 
           let failed = false;
-          for (const file of files) {
-            const dataPath = path.join(outputsDir, file);
-            const schemaPath = path.join(schemasDir, file.replace('.json', '.schema.json'));
-            if(!exists(schemaPath)) {
-              console.log(`⚠️  沒有對應的 schema：${schemaPath}（略過 ${file}）`);
-              continue;
-            }
+          for (const f of files) {
+            const dataPath = path.join(OUT, f);
+            const schemaPath = path.join(SCHEMA, f.replace(/\.json$/, '.schema.json'));
+
+            if (!exists(schemaPath)) { console.log(`⚠️ 無對應 schema：${schemaPath}（略過）`); continue; }
+
             const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
             const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
             const validate = ajv.compile(schema);
             const ok = validate(data);
-            if (ok) {
-              console.log(`✅ ${file} passed`);
-            } else {
+
+            if (ok) console.log(`✅ ${f} passed`);
+            else {
               failed = true;
-              console.error(`❌ ${file} failed`);
-              for (const err of validate.errors) {
-                console.error(`   - ${err.instancePath || '/'} ${err.message}`);
-              }
+              console.error(`❌ ${f} failed`);
+              for (const e of validate.errors) console.error(`  - ${(e.instancePath||'/')}: ${e.message}`);
+              console.log(`::error file=${dataPath}::Schema validation failed against ${schemaPath}`);
             }
           }
           process.exit(failed ? 1 : 0);
           NODE
-
