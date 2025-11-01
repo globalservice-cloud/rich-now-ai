@@ -5,76 +5,82 @@ on:
     - cron: "0 1 * * 1"   # 週一 09:00 台北 (UTC+8)
   workflow_dispatch:
   push:
-    paths:
-      - "ai/outputs/**"   # 有新輸出也允許自動跑週報
+    paths: ["ai/outputs/**"]
 
 permissions:
   contents: write
+
+concurrency:
+  group: weekly-status-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   report:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Generate STATUS.md (safe CJS)
+      - name: Generate STATUS.md (CJS)
         run: |
           node <<'NODE'
           const fs = require('fs');
           const path = require('path');
           const outDir = path.join('ai','outputs');
-
-          const load = (f) => { try { return JSON.parse(fs.readFileSync(path.join(outDir,f),'utf8')) } catch { return null } };
+          const load = f => { try { return JSON.parse(fs.readFileSync(path.join(outDir,f),'utf8')) } catch { return null } };
           const rfc   = load('rfc.json');
           const adr   = load('adr.json');
           const qa    = load('qa-report.json');
           const gates = load('release-gates.json');
 
-          const lines = [];
-          lines.push('# Weekly Status');
-          lines.push('*Generated:* '+new Date().toISOString());
-
-          if (rfc) {
-            lines.push('## RFC');
-            lines.push('- **Title**: ' + (rfc.title || ''));
-            lines.push('- **Milestones**: ' + JSON.stringify(rfc.milestones || []));
+          const L = [];
+          L.push('# Weekly Status');
+          L.push('*Generated:* '+new Date().toISOString());
+          if(rfc){ L.push('## RFC','- **Title**: '+(rfc.title||''),'- **Milestones**: '+JSON.stringify(rfc.milestones||[])); }
+          if(adr){ L.push('## ADR','- **Decision**: '+(adr.decision||'')); }
+          if(qa){  L.push('## QA','- **Coverage**: '+(qa.coverage??'N/A')+'%','- **Result**: '+(qa.result??'N/A')); }
+          if(gates){
+            L.push('## Release Gates',
+              '- dataQuality: '+gates.dataQuality,
+              '- tests: '+gates.tests,
+              '- slo: '+gates.slo,
+              '- signoff: '+gates.signoff,
+              '- flagStrategy: '+gates.flagStrategy);
           }
-          if (adr) {
-            lines.push('## ADR');
-            lines.push('- **Decision**: ' + (adr.decision || ''));
-          }
-          if (qa) {
-            const cov = (qa.coverage != null) ? qa.coverage : 'N/A';
-            const res = (qa.result   != null) ? qa.result   : 'N/A';
-            lines.push('## QA','- **Coverage**: ' + cov + '%','- **Result**: ' + res);
-          }
-          if (gates) {
-            lines.push('## Release Gates');
-            lines.push('- dataQuality: ' + gates.dataQuality);
-            lines.push('- tests: ' + gates.tests);
-            lines.push('- slo: ' + gates.slo);
-            lines.push('- signoff: ' + gates.signoff);
-            lines.push('- flagStrategy: ' + gates.flagStrategy);
-          }
-
-          fs.writeFileSync('STATUS.md', lines.join('\n'));
+          fs.writeFileSync('STATUS.md', L.join('\n'));
           console.log('✅ STATUS.md generated');
           NODE
 
-      # 只有在「非 pull_request」事件才嘗試提交（PR 下 token 通常是 read-only）
-      - name: Commit & Push if changed (non-PR only)
+      - name: Show event/branch (debug)
+        run: |
+          echo "event=${GITHUB_EVENT_NAME}"
+          echo "ref=${GITHUB_REF}"
+          echo "ref_name=${GITHUB_REF_NAME}"
+
+      # 只在非 PR 事件才嘗試提交
+      - name: Commit & Push if changed (non-PR)
         if: github.event_name != 'pull_request'
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 先同步遠端，避免 non-fast-forward
+          git fetch origin "$BRANCH_NAME" --depth=1 || true
+          git pull --rebase origin "$BRANCH_NAME" || true
+
           git add STATUS.md
           if git diff --cached --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "chore(report): weekly STATUS.md"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore(report): weekly STATUS.md"
+          git push origin "$BRANCH_NAME"
