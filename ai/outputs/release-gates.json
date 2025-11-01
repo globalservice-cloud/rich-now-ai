@@ -1,0 +1,7 @@
+{
+  "dataQuality": true,
+  "tests": true,
+  "slo": true,
+  "signoff": true,
+  "flagStrategy": "gradual-rollout"
+}
