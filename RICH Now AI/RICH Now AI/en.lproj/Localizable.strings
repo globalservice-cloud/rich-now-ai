@@ -1,0 +1,1130 @@
+/* 
+  Localizable.strings (English)
+  RICH Now AI
+  
+  Created by AI Assistant on 2025/10/26.
+*/
+
+// MARK: - Welcome & Language Selection
+"welcome.select_language" = "Choose Your Language";
+"welcome.language_subtitle" = "Select your preferred language for the best experience";
+"welcome.continue" = "Continue";
+"welcome.english_description" = "English - Default language";
+"welcome.traditional_chinese_description" = "繁體中文 - Traditional Chinese";
+"welcome.simplified_chinese_description" = "简体中文 - Simplified Chinese";
+
+// MARK: - Welcome Animation
+"welcome.animation.title" = "Welcome to RICH Now AI";
+"welcome.animation.subtitle" = "Your Financial Guardian Angel";
+"welcome.animation.description" = "God created wealth to make people abundant. This is a heavenly gift and guardianship from above.";
+"welcome.animation.skip" = "Skip";
+
+// MARK: - Gabriel Selection
+"gabriel.select_title" = "Choose Your Financial Guardian Angel";
+"gabriel.male" = "Archangel Gabriel";
+"gabriel.female" = "Angel Gabriel";
+"gabriel.male_description" = "Firm & Wise";
+"gabriel.female_description" = "Gentle & Caring";
+"gabriel.selection_subtitle" = "Your guardian will provide personalized financial guidance";
+
+// MARK: - Gabriel Introduction
+"gabriel.greeting" = "Hello! I am %@ 🌟";
+"gabriel.introduction" = "I will become your most understanding financial guardian angel and close friend.";
+"gabriel.promise" = "In the days ahead, I will accompany you to build healthy finances and fulfill every dream of yours.";
+
+// MARK: - Onboarding Conversation
+"onboarding.what_should_i_call_you" = "Let's start by getting to know each other! What should I call you? 😊";
+"onboarding.gender_question" = "To give you the most suitable advice, I'd like to know your gender. Would you mind telling me?";
+"gender.male" = "Male 👨";
+"gender.female" = "Female 👩";
+"gender.prefer_not_to_say" = "Prefer not to say";
+"onboarding.email_question" = "Perfect! I'd like to prepare personalized financial reports and growth recommendations for you regularly. Could you leave your email? I promise to only use it to send you valuable content 💝";
+"onboarding.email_placeholder" = "Enter Email";
+"onboarding.email_skip" = "Maybe later";
+"onboarding.report_frequency_question" = "Perfect! How often should I send you financial reports?";
+"onboarding.conversation_style_question" = "One last question! What tone would you like me to use when chatting with you?";
+"onboarding.conversation_style_formal" = "Formal 👔";
+"onboarding.conversation_style_friendly" = "Friendly 😊";
+"onboarding.conversation_style_casual" = "Casual 🎉";
+"onboarding.conversation_style_professional" = "Professional 💼";
+
+// MARK: - VGLA Introduction
+"vgla.title" = "VGLA Personality Exploration";
+"vgla.subtitle" = "Let me truly understand your unique qualities";
+"vgla.vision_title" = "V Vision Thinking";
+"vgla.vision_description" = "Pursuing meaning and long-term goals";
+"vgla.goal_title" = "G Goal Orientation";
+"vgla.goal_description" = "Valuing relationships and others' feelings";
+"vgla.logic_title" = "L Logic Analysis";
+"vgla.logic_description" = "Emphasizing rules and systematic thinking";
+"vgla.action_title" = "A Action Practice";
+"vgla.action_description" = "Pursuing quick execution and visible results";
+"vgla.start_exploration" = "Start Exploration";
+
+// MARK: - VGLA Assessment
+"vgla.assessment.title" = "VGLA Assessment";
+"vgla.assessment.subtitle" = "Answer honestly to get the most accurate results";
+"vgla.assessment.progress" = "Question %d of 60";
+"vgla.assessment.next" = "Next";
+"vgla.assessment.previous" = "Previous";
+"vgla.assessment.complete" = "Complete Assessment";
+
+// MARK: - VGLA Results
+"vgla.result.title" = "Your VGLA Result";
+"vgla.result.primary_type" = "Primary Type: %@";
+"vgla.result.secondary_type" = "Secondary Type: %@";
+"vgla.result.combination" = "Combination: %@";
+"vgla.result.description" = "Based on your VGLA type, Gabriel will provide personalized financial advice tailored to your thinking style.";
+"vgla.result.continue" = "Continue to Theme Panel";
+
+// MARK: - VGLA Paywall
+"vgla.paywall.personalized_analysis" = "Personalized Financial Analysis";
+"vgla.paywall.personalized_analysis_desc" = "Get accurate financial analysis based on your personality";
+"vgla.paywall.investment_advice" = "Investment Recommendations";
+"vgla.paywall.investment_advice_desc" = "Receive investment advice tailored to your risk profile";
+"vgla.paywall.ai_style" = "AI Conversation Style";
+"vgla.paywall.ai_style_desc" = "Gabriel adapts communication style to your preferences";
+"vgla.paywall.themes" = "16 Personality Themes";
+"vgla.paywall.themes_desc" = "Unlock exclusive VGLA personality-based themes";
+"vgla.paywall.start_assessment" = "Start VGLA Assessment";
+"vgla.paywall.skip_for_now" = "Skip for Now";
+
+// MARK: - VGLA Purchase
+"vgla.purchase.title" = "Unlock VGLA Assessment";
+"vgla.purchase.subtitle" = "Get personalized financial insights and exclusive themes";
+"vgla.purchase.navigation_title" = "Choose Plan";
+"vgla.purchase.basic_desc" = "Basic VGLA assessment with limited features";
+"vgla.purchase.pro_desc" = "Full VGLA assessment with all themes and features";
+"vgla.purchase.enterprise_desc" = "Complete VGLA suite with advanced analytics";
+"vgla.purchase.buy_now" = "Subscribe Now";
+"vgla.purchase.cancel" = "Cancel";
+
+// MARK: - User Profile
+"profile.title" = "Profile";
+"profile.nickname" = "Nickname";
+"profile.gender" = "Gender";
+"profile.email" = "Email";
+"profile.conversation_style" = "Conversation Style";
+"profile.report_frequency" = "Report Frequency";
+"profile.subscription_tier" = "Subscription Tier";
+"profile.vgla_completed" = "VGLA Completed";
+"profile.edit_profile" = "Edit Profile";
+"profile.save_changes" = "Save Changes";
+"profile.cancel" = "Cancel";
+
+// MARK: - Report Frequency
+"report_frequency.daily" = "Daily";
+"report_frequency.weekly" = "Weekly";
+"report_frequency.biweekly" = "Bi-weekly";
+"report_frequency.monthly" = "Monthly";
+"report_frequency.quarterly" = "Quarterly";
+"report_frequency.yearly" = "Yearly";
+"report_frequency.never" = "Do not send to me";
+
+// MARK: - Subscription Tiers
+"subscription.free" = "Free";
+"subscription.basic" = "Basic";
+"subscription.pro" = "Pro";
+"subscription.enterprise" = "Enterprise";
+"subscription.byok" = "Bring Your Own Key";
+
+// MARK: - Financial Advice
+"financial.advice.default" = "I'll help you build a solid financial foundation with personalized guidance.";
+"financial.advice.vision" = "As a visionary person, I'll help you create long-term financial strategies that align with your dreams and values.";
+"financial.advice.gracious" = "I understand you value relationships. Let me help you build wealth while maintaining meaningful connections.";
+"financial.advice.logic" = "Your analytical nature is perfect for systematic financial planning. I'll provide structured, data-driven advice.";
+"financial.advice.action" = "Your action-oriented approach is great for quick wins. I'll help you implement fast, effective financial strategies.";
+
+// MARK: - Investment Advice
+"investment.advice.default" = "I'll provide investment recommendations based on your risk tolerance and financial goals.";
+"investment.advice.vision" = "For your visionary nature, I recommend long-term growth investments that align with your values and future goals.";
+"investment.advice.gracious" = "I'll suggest socially responsible investments that create positive impact while building your wealth.";
+"investment.advice.logic" = "Your analytical approach suits diversified portfolios with clear metrics and systematic rebalancing.";
+"investment.advice.action" = "I'll recommend active investment strategies with clear entry/exit points that match your decisive nature.";
+
+// MARK: - Theme Panel
+"theme.surprise_title" = "🎨 Your Exclusive Panel";
+"theme.surprise_subtitle" = "Based on your %@ personality, we've prepared a special theme panel for you!";
+"theme.apply" = "Apply Panel";
+"theme.skip" = "Skip for Now";
+"theme.preview" = "Preview";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.title" = "Everything is Ready!";
+"onboarding.complete.subtitle" = "%@, let's start your financial journey";
+"onboarding.complete.rewards" = "Welcome Rewards";
+"onboarding.complete.exclusive_panel" = "%@ Exclusive Panel";
+"onboarding.complete.ai_chat" = "AI Chat";
+"onboarding.complete.welcome_badge" = "Welcome Badge";
+"onboarding.complete.financial_analysis" = "Financial Analysis";
+"onboarding.complete.start_journey" = "Start My Financial Journey";
+
+// MARK: - Chat Interface
+"chat.welcome" = "Hello! I am your AI CFO Gabriel 🌟\n\nI can help you:\n• Record and manage financial transactions\n• Analyze your financial situation\n• Provide investment advice\n• Set financial goals\n\nTell me what you'd like to do, or directly record your transactions!";
+"chat.send" = "Send";
+"chat.voice" = "Voice";
+"chat.camera" = "Camera";
+"chat.typing" = "Gabriel is typing...";
+"chat.title" = "Chat";
+"chat.gabriel" = "Gabriel";
+"chat.input_placeholder" = "Type a message...";
+"chat.offline_banner" = "Internet connection required to chat with Gabriel";
+"chat.error" = "Error";
+"chat.ok" = "OK";
+"chat.transaction_success" = "✅ Transaction recorded successfully!";
+"chat.transaction_amount" = "💰 Amount: $%@";
+"chat.transaction_category" = "📂 Category: %@";
+"chat.transaction_description" = "📝 Description: %@";
+"chat.transaction_analysis" = "Need me to analyze this transaction?";
+"chat.multiple_transactions_success" = "✅ Successfully identified %d transactions!";
+"chat.transaction_number" = "📝 Transaction %d:";
+"chat.all_transactions_recorded" = "All transactions have been recorded!";
+"chat.transaction_analysis_question" = "Need me to analyze these transactions?";
+"chat.transaction_parse_error" = "❌ Sorry, I couldn't parse this transaction record. Please try a clearer format, such as: \"Spent $500 on lunch today\" or \"Lunch $150, Coffee $80\"";
+"chat.offline_mode" = "📱 Offline mode: Unable to use AI parsing, please use simple format, such as: \"Spent $500 on lunch today\" or \"Lunch $150, Coffee $80\"";
+"chat.processing_powerful_ai" = "Using more powerful AI to process your request...";
+"chat.sorry_cannot_process" = "Sorry, currently unable to process complex requests.\n\nYou can:\n• Check network connection\n• Try again later\n• Or ask simpler questions\n\nI'll do my best to help you with my knowledge.";
+"chat.limit_reached" = "⚠️ Chat limit reached. Please upgrade subscription or try again later.";
+"chat.processing_error" = "❌ Sorry, an error occurred while processing your message.";
+"chat.voice_recording_error" = "Unable to start recording: %@";
+"chat.voice_transcription_error" = "Voice-to-text failed: %@";
+"chat.image_analysis_success" = "📸 I analyzed your image:\n\n💰 Amount: %@\n📂 Category: %@\n📝 Description: %@\n\nNeed me to record this transaction?";
+"chat.image_analysis_error" = "❌ Image analysis failed: %@";
+"chat.quick_start" = "💡 Quick Start";
+
+// MARK: - Financial Dashboard
+"dashboard.title" = "Financial Dashboard";
+"dashboard.hello" = "Hello, %@!";
+"dashboard.health_score" = "Your Financial Health Score";
+"dashboard.vgla_type" = "Your Thinking Mode Combination";
+"dashboard.goals_progress" = "Financial Goals Progress";
+"dashboard.investment_performance" = "Investment Portfolio Performance";
+"dashboard.income_suggestions" = "Income Generation Suggestions";
+"dashboard.financial_map" = "Your Financial Map Overview";
+
+// MARK: - Financial Health Dimensions
+"health.basic_stability" = "Basic Stability";
+"health.risk_protection" = "Risk Protection";
+"health.wealth_growth" = "Wealth Growth";
+"health.advanced_planning" = "Advanced Planning";
+"health.giving_impact" = "Giving Impact";
+"health.goal_achievement" = "Goal Achievement";
+"financial_health.excellent" = "Excellent";
+"financial_health.good" = "Good";
+"financial_health.fair" = "Fair";
+"financial_health.needs_improvement" = "Needs Improvement";
+
+// MARK: - Transaction Categories
+"transaction.food" = "Food & Dining";
+"transaction.transport" = "Transportation";
+"transaction.housing" = "Housing";
+"transaction.entertainment" = "Entertainment";
+"transaction.education" = "Education";
+"transaction.health" = "Healthcare";
+"transaction.shopping" = "Shopping";
+"transaction.salary" = "Salary";
+"transaction.investment" = "Investment Returns";
+"transaction.gift" = "Gifts";
+"transaction.other" = "Other";
+
+// MARK: - TKI Assessment
+"tki.title" = "TKI Conflict Style Assessment";
+"tki.subtitle" = "Advanced Financial Decision-Making Assessment";
+"tki.competing" = "Competing";
+"tki.collaborating" = "Collaborating";
+"tki.compromising" = "Compromising";
+"tki.avoiding" = "Avoiding";
+"tki.accommodating" = "Accommodating";
+"tki.start_assessment" = "Start Assessment";
+"tki.question_progress" = "Question %d of 30";
+"tki.option_a" = "Option A";
+"tki.option_b" = "Option B";
+"tki.next" = "Next";
+"tki.previous" = "Previous";
+"tki.complete" = "Complete Assessment";
+
+// MARK: - TKI Results
+"tki.result.title" = "Your TKI Result";
+"tki.result.primary_mode" = "Primary Mode: %@";
+"tki.result.secondary_mode" = "Secondary Mode: %@";
+"tki.result.financial_style" = "Financial Decision Style";
+"tki.result.recommendations" = "Recommendations";
+"tki.result.integrated_analysis" = "Integrated Analysis with VGLA";
+
+// MARK: - Advanced Assessment
+"advanced.title" = "Advanced Assessments";
+"advanced.subtitle" = "Deepen your understanding of your financial personality";
+"advanced.tki_card" = "TKI Conflict Style Assessment";
+"advanced.tki_description" = "Evaluate your financial decision-making style through conflict resolution preferences";
+"advanced.tki_duration" = "10-15 minutes";
+"advanced.tki_completed" = "Completed";
+"advanced.tki_start" = "Start Assessment";
+
+// MARK: - Common Actions
+"common.continue" = "Continue";
+"common.skip" = "Skip";
+"common.cancel" = "Cancel";
+"common.confirm" = "Confirm";
+"common.back" = "Back";
+"common.next" = "Next";
+"common.previous" = "Previous";
+"common.complete" = "Complete";
+"common.start" = "Start";
+"common.finish" = "Finish";
+"common.ok" = "OK";
+"common.close" = "Close";
+"common.view_all" = "View All";
+"common.save" = "Save";
+"common.edit" = "Edit";
+"common.delete" = "Delete";
+"common.done" = "Done";
+"common.unknown" = "Unknown";
+
+// MARK: - Guide Steps
+"guide.complete.title" = "Guide Complete";
+"guide.complete.message" = "Congratulations! You have completed the financial health dimension guide.";
+"guide.step.info" = "Learn more about this dimension and how to improve your score.";
+
+// MARK: - Error Messages
+"error.general" = "Sorry, an error occurred. Please try again.";
+"error.network" = "Network connection error. Please check your internet connection.";
+"error.invalid_input" = "Invalid input. Please check your information.";
+"error.assessment_failed" = "Assessment failed. Please try again.";
+
+// MARK: - Success Messages
+"success.assessment_completed" = "Assessment completed successfully!";
+"success.data_saved" = "Data saved successfully!";
+"success.settings_updated" = "Settings updated successfully!";
+
+// MARK: - Additional UI Elements
+"chat.title" = "Chat";
+"transaction.title" = "Transactions";
+"reports.title" = "Reports";
+"reports.empty.title" = "No Reports Yet";
+"reports.empty.description" = "Generate your first financial report to get insights into your financial health";
+"reports.generate_first" = "Generate Report";
+"reports.generator.title" = "Choose Report Type";
+"reports.generator.nav_title" = "Generate Report";
+
+// Report Types
+"report.type.monthly_summary" = "Monthly Summary";
+"report.type.goal_progress" = "Goal Progress";
+"report.type.budget_analysis" = "Budget Analysis";
+"report.type.investment_performance" = "Investment Performance";
+"report.type.debt_analysis" = "Debt Analysis";
+"report.type.financial_health" = "Financial Health";
+"report.type.vgla_insights" = "VGLA Insights";
+"report.type.custom" = "Custom Report";
+
+// Report Type Descriptions
+"report.type.monthly_summary.description" = "Comprehensive monthly financial overview";
+"report.type.goal_progress.description" = "Track your financial goals progress";
+"report.type.budget_analysis.description" = "Analyze your spending patterns";
+"report.type.investment_performance.description" = "Review your investment returns";
+"report.type.debt_analysis.description" = "Understand your debt situation";
+"report.type.financial_health.description" = "Overall financial wellness assessment";
+"report.type.vgla_insights.description" = "Personality-based financial insights";
+"report.type.custom.description" = "Create a personalized report";
+
+// Report Status
+"report.status.generating" = "Generating";
+"report.status.completed" = "Completed";
+"report.status.failed" = "Failed";
+
+"settings.title" = "Settings";
+"settings.assessments" = "Assessments";
+"settings.advanced_assessment" = "Advanced Assessment";
+"settings.language" = "Language";
+"settings.language_selection" = "Language Selection";
+"settings.account" = "Account";
+"settings.subscription" = "Subscription";
+"settings.api_settings" = "API Settings";
+
+// MARK: - TKI Additional Strings
+"tki.result.subtitle" = "Your financial decision-making style analysis";
+"tki.result.score_distribution" = "Score Distribution";
+"tki.question_1_title" = "When facing a financial decision, I prefer to:";
+"tki.question_1_option_a" = "Take decisive action to achieve the best outcome";
+"tki.question_1_option_b" = "Collaborate with others to find a mutually beneficial solution";
+"tki.question_2_title" = "In financial conflicts, I tend to:";
+"tki.question_2_option_a" = "Stand firm on my position";
+"tki.question_2_option_b" = "Work together to find creative solutions";
+"tki.question_3_title" = "When making investment decisions, I:";
+"tki.question_3_option_a" = "Trust my analysis and act quickly";
+"tki.question_3_option_b" = "Seek input from financial advisors and family";
+"tki.question_4_title" = "In budget negotiations, I:";
+"tki.question_4_option_a" = "Push for the most favorable terms";
+"tki.question_4_option_b" = "Look for win-win solutions";
+"tki.question_5_title" = "When facing financial pressure, I:";
+"tki.question_5_option_a" = "Take control and make tough decisions";
+"tki.question_5_option_b" = "Engage stakeholders to find common ground";
+"tki.question_6_title" = "In financial planning, I prefer to:";
+"tki.question_6_option_a" = "Lead the process and set clear direction";
+"tki.question_6_option_b" = "Facilitate group discussion and consensus";
+
+// MARK: - Advanced Assessment
+"advanced.tki_questions" = "Questions";
+"advanced.tki_modes" = "Assessment Modes";
+"advanced.tki_retake" = "Retake Assessment";
+"advanced.future_assessments" = "Coming Soon";
+"advanced.future_description" = "More personality assessments will be available soon";
+"advanced.coming_soon" = "Available Soon";
+"advanced.mbti" = "MBTI";
+"advanced.big5" = "Big Five";
+"advanced.disc" = "DISC";
+
+// MARK: - VGLA Assessment Details
+"vgla.phase.like" = "Most Preferred";
+"vgla.phase.dislike" = "Least Preferred";
+"vgla.phase.like.description" = "Please intuitively select the option that best matches your usual thoughts or actions";
+"vgla.phase.dislike.description" = "Please select the option that is least like you or that you dislike most";
+"vgla.scenario.prefix" = "Scenario: ";
+"vgla.question.like.prompt" = "In the context of \"%scenario%\", my most preferred approach is:";
+"vgla.question.dislike.prompt" = "In the context of \"%scenario%\", my least preferred/least like me approach is:";
+"vgla.option.action" = "I will take immediate action to achieve visible progress (%scenario%)";
+"vgla.option.goal" = "I will first consider everyone's feelings and create a good atmosphere (%scenario%)";
+"vgla.option.logic" = "I will first clarify rules, processes and basis (%scenario%)";
+"vgla.option.vision" = "I will first describe long-term direction and meaning (%scenario%)";
+
+// MARK: - VGLA Scenarios
+"vgla.scenario.teamwork" = "Team Collaboration";
+"vgla.scenario.meeting" = "Meeting Discussion";
+"vgla.scenario.project_start" = "Project Launch";
+"vgla.scenario.conflict" = "Facing Conflict";
+"vgla.scenario.deadline" = "Facing Deadline";
+"vgla.scenario.learning" = "Learning New Tools";
+"vgla.scenario.innovation" = "Proposing Innovation";
+"vgla.scenario.risk_assessment" = "Risk Assessment";
+"vgla.scenario.feedback" = "Responding to Feedback";
+"vgla.scenario.data_analysis" = "Data Analysis";
+"vgla.scenario.process_optimization" = "Process Optimization";
+"vgla.scenario.cross_department" = "Cross-Department Collaboration";
+"vgla.scenario.customer_service" = "Customer Service";
+"vgla.scenario.crisis_management" = "Crisis Management";
+"vgla.scenario.resource_allocation" = "Resource Allocation";
+"vgla.scenario.quality_control" = "Quality Control";
+"vgla.scenario.change_management" = "Change Management";
+"vgla.scenario.task_delegation" = "Task Delegation";
+"vgla.scenario.mentoring" = "Mentoring Newcomers";
+"vgla.scenario.brainstorming" = "Brainstorming";
+"vgla.scenario.communication" = "Communication";
+"vgla.scenario.uncertainty" = "Facing Uncertainty";
+"vgla.scenario.time_management" = "Time Management";
+"vgla.scenario.documentation" = "Documentation";
+"vgla.scenario.emotional_awareness" = "Emotional Awareness";
+"vgla.scenario.negotiation" = "Negotiation";
+"vgla.scenario.pilot_testing" = "Pilot Testing";
+"vgla.scenario.compliance" = "Compliance";
+"vgla.scenario.work_rhythm" = "Work Rhythm";
+"vgla.scenario.celebration" = "Celebration";
+
+// MARK: - VGLA Results
+"vgla.analysis.analyzing" = "✨ Analyzing... ✨";
+"vgla.analysis.description" = "Gabriel is deeply understanding your thinking patterns...";
+"vgla.result.discovered" = "%name%, I found it!";
+"vgla.result.type" = "You are [%type%] ✨";
+"vgla.result.radar_chart" = "Your Thinking Pattern Radar Chart";
+"vgla.result.detailed_scores" = "Detailed Scores";
+"vgla.result.congratulations" = "Congratulations! You have found your unique thinking pattern";
+
+// MARK: - TKI Additional Questions (7-30)
+"tki.question_7_title" = "When facing a financial decision, I prefer to:";
+"tki.question_7_option_a" = "Take decisive action to achieve the best outcome";
+"tki.question_7_option_b" = "Find a middle ground that works for everyone";
+"tki.question_8_title" = "In financial conflicts, I tend to:";
+"tki.question_8_option_a" = "Stand firm on my position";
+"tki.question_8_option_b" = "Look for a compromise solution";
+"tki.question_9_title" = "When making investment decisions, I:";
+"tki.question_9_option_a" = "Trust my analysis and act quickly";
+"tki.question_9_option_b" = "Seek a balanced approach";
+"tki.question_10_title" = "In budget negotiations, I:";
+"tki.question_10_option_a" = "Push for the most favorable terms";
+"tki.question_10_option_b" = "Work towards a fair compromise";
+"tki.question_11_title" = "When facing financial pressure, I:";
+"tki.question_11_option_a" = "Take control and make tough decisions";
+"tki.question_11_option_b" = "Find a balanced solution";
+"tki.question_12_title" = "In financial planning, I prefer to:";
+"tki.question_12_option_a" = "Lead the process and set clear direction";
+"tki.question_12_option_b" = "Create a balanced plan";
+"tki.question_13_title" = "When facing a financial decision, I prefer to:";
+"tki.question_13_option_a" = "Take decisive action to achieve the best outcome";
+"tki.question_13_option_b" = "Avoid making hasty decisions";
+"tki.question_14_title" = "In financial conflicts, I tend to:";
+"tki.question_14_option_a" = "Stand firm on my position";
+"tki.question_14_option_b" = "Step back and let things settle";
+"tki.question_15_title" = "When making investment decisions, I:";
+"tki.question_15_option_a" = "Trust my analysis and act quickly";
+"tki.question_15_option_b" = "Take time to think it through";
+"tki.question_16_title" = "In budget negotiations, I:";
+"tki.question_16_option_a" = "Push for the most favorable terms";
+"tki.question_16_option_b" = "Avoid confrontation";
+"tki.question_17_title" = "When facing financial pressure, I:";
+"tki.question_17_option_a" = "Take control and make tough decisions";
+"tki.question_17_option_b" = "Wait and see how things develop";
+"tki.question_18_title" = "In financial planning, I prefer to:";
+"tki.question_18_option_a" = "Lead the process and set clear direction";
+"tki.question_18_option_b" = "Let others take the lead";
+"tki.question_19_title" = "When facing a financial decision, I prefer to:";
+"tki.question_19_option_a" = "Take decisive action to achieve the best outcome";
+"tki.question_19_option_b" = "Put others' needs first";
+"tki.question_20_title" = "In financial conflicts, I tend to:";
+"tki.question_20_option_a" = "Stand firm on my position";
+"tki.question_20_option_b" = "Give in to maintain harmony";
+"tki.question_21_title" = "When making investment decisions, I:";
+"tki.question_21_option_a" = "Trust my analysis and act quickly";
+"tki.question_21_option_b" = "Consider others' preferences";
+"tki.question_22_title" = "In budget negotiations, I:";
+"tki.question_22_option_a" = "Push for the most favorable terms";
+"tki.question_22_option_b" = "Accommodate others' requests";
+"tki.question_23_title" = "When facing financial pressure, I:";
+"tki.question_23_option_a" = "Take control and make tough decisions";
+"tki.question_23_option_b" = "Support others' decisions";
+"tki.question_24_title" = "In financial planning, I prefer to:";
+"tki.question_24_option_a" = "Lead the process and set clear direction";
+"tki.question_24_option_b" = "Follow others' lead";
+"tki.question_25_title" = "When facing a financial decision, I prefer to:";
+"tki.question_25_option_a" = "Collaborate with others to find a mutually beneficial solution";
+"tki.question_25_option_b" = "Find a middle ground that works for everyone";
+"tki.question_26_title" = "In financial conflicts, I tend to:";
+"tki.question_26_option_a" = "Work together to find creative solutions";
+"tki.question_26_option_b" = "Step back and let things settle";
+"tki.question_27_title" = "When making investment decisions, I:";
+"tki.question_27_option_a" = "Seek input from financial advisors and family";
+"tki.question_27_option_b" = "Put others' needs first";
+"tki.question_28_title" = "In budget negotiations, I:";
+"tki.question_28_option_a" = "Look for win-win solutions";
+"tki.question_28_option_b" = "Avoid confrontation";
+"tki.question_29_title" = "When facing financial pressure, I:";
+"tki.question_29_option_a" = "Engage stakeholders to find common ground";
+"tki.question_29_option_b" = "Give in to maintain harmony";
+"tki.question_30_title" = "In financial planning, I prefer to:";
+"tki.question_30_option_a" = "Facilitate group discussion and consensus";
+"tki.question_30_option_b" = "Let others take the lead";
+
+// MARK: - Text Accounting
+"text_accounting.title" = "Text Accounting";
+"text_accounting.subtitle" = "Record transactions using natural language";
+"text_accounting.navigation_title" = "Text Accounting";
+"text_accounting.input_label" = "Describe your transaction";
+"text_accounting.examples_title" = "Examples:";
+"text_accounting.example1" = "Spent $50 on lunch";
+"text_accounting.example2" = "Received $2000 salary";
+"text_accounting.example3" = "Bought coffee for $3.50";
+"text_accounting.example4" = "Paid $100 for gas";
+"text_accounting.processing" = "Analyzing...";
+"text_accounting.analyze" = "Analyze Transaction";
+"text_accounting.success" = "Transaction recorded successfully!";
+"text_accounting.save_error" = "Failed to save transaction";
+"text_accounting.confirmation_title" = "Confirm Transaction";
+"text_accounting.confirmation_subtitle" = "Please review the details";
+"text_accounting.confirm_transaction" = "Confirm Transaction";
+"text_accounting.amount" = "Amount";
+"text_accounting.type" = "Type";
+"text_accounting.category" = "Category";
+"text_accounting.description" = "Description";
+"text_accounting.description_placeholder" = "Enter description";
+
+// MARK: - Transaction
+"transaction.income" = "Income";
+"transaction.expense" = "Expense";
+"transaction.history_title" = "Transaction History";
+"transaction.search_placeholder" = "Search transactions...";
+"transaction.filter_title" = "Filter Transactions";
+"transaction.filter.all" = "All";
+"transaction.filter.income" = "Income";
+"transaction.filter.expense" = "Expense";
+"transaction.filter.today" = "Today";
+"transaction.filter.thisWeek" = "This Week";
+"transaction.filter.thisMonth" = "This Month";
+"transaction.empty_title" = "No Transactions";
+"transaction.empty_subtitle" = "Start recording your transactions";
+"transaction.detail_title" = "Transaction Details";
+"transaction.description" = "Description";
+"transaction.category" = "Category";
+"transaction.date" = "Date";
+"transaction.original_text" = "Original Text";
+"transaction.notes" = "Notes";
+"transaction.tags" = "Tags";
+
+// MARK: - Accounting
+"accounting.title" = "Accounting";
+"accounting.subtitle" = "Track your finances";
+"accounting.today_income" = "Today Income";
+"accounting.today_expense" = "Today Expense";
+"accounting.today" = "Today";
+"accounting.monthly" = "Monthly";
+"accounting.categories" = "Categories";
+"accounting.today_transactions" = "Today's Transactions";
+"accounting.no_transactions_today" = "No transactions recorded today";
+"accounting.monthly_income" = "Monthly Income";
+"accounting.monthly_expense" = "Monthly Expense";
+"accounting.net_amount" = "Net Amount";
+"accounting.transaction_count" = "Transaction Count";
+"accounting.total" = "Total";
+"accounting.income_count" = "Income";
+"accounting.expense_count" = "Expense";
+"accounting.transactions" = "transactions";
+"accounting.category_stats" = "Category Statistics";
+"accounting.no_category_data" = "No category data available";
+
+// MARK: - Transaction Entry
+"transaction.title" = "Accounting";
+"transaction.subtitle" = "Track your financial transactions";
+"transaction.history_subtitle" = "View all your transactions";
+"transaction.quick_entry" = "Quick Entry";
+"transaction.quick_entry_subtitle" = "Fast transaction recording";
+
+// MARK: - Subscription Plans
+"subscription.free.name" = "Free";
+"subscription.free.description" = "Basic features for getting started";
+"subscription.free.price" = "Free";
+"subscription.free.feature1" = "Basic AI chat (20 messages/month)";
+"subscription.free.feature2" = "Text accounting";
+"subscription.free.feature3" = "Basic financial dashboard";
+
+"subscription.basic.name" = "Basic";
+"subscription.basic.description" = "Perfect for personal finance management";
+"subscription.basic.price" = "$4.99/month";
+"subscription.basic.feature1" = "AI chat (100 messages/month)";
+"subscription.basic.feature2" = "Voice input (30 minutes/month)";
+"subscription.basic.feature3" = "Image analysis (10 images/month)";
+"subscription.basic.feature4" = "Advanced transaction parsing";
+
+"subscription.premium.name" = "Premium";
+"subscription.premium.description" = "Advanced features for serious users";
+"subscription.premium.price" = "$9.99/month";
+"subscription.premium.feature1" = "Unlimited AI chat";
+"subscription.premium.feature2" = "Voice input (120 minutes/month)";
+"subscription.premium.feature3" = "Image analysis (50 images/month)";
+"subscription.premium.feature4" = "Advanced reports";
+"subscription.premium.feature5" = "Custom themes";
+
+"subscription.pro.name" = "Pro";
+"subscription.pro.description" = "Professional features for power users";
+"subscription.pro.price" = "$19.99/month";
+"subscription.pro.feature1" = "Unlimited everything";
+"subscription.pro.feature2" = "Priority support";
+"subscription.pro.feature3" = "API key support";
+"subscription.pro.feature4" = "Advanced analytics";
+"subscription.pro.feature5" = "Custom integrations";
+"subscription.pro.feature6" = "White-label options";
+
+// MARK: - Subscription Store
+"subscription.store.title" = "Subscription Store";
+"subscription.store.header_title" = "Choose Your Plan";
+"subscription.store.header_subtitle" = "Unlock the full potential of RICH Now AI";
+"subscription.popular" = "Popular";
+"subscription.choose_plan" = "Choose Your Plan";
+"subscription.loading" = "Loading plans...";
+"subscription.current_status" = "Current Subscription";
+"subscription.active" = "Active";
+"subscription.restore" = "Restore";
+
+// MARK: - Subscription Features
+"subscription.feature.ai_chat" = "AI Chat";
+"subscription.feature.voice_input" = "Voice Input";
+"subscription.feature.image_analysis" = "Image Analysis";
+"subscription.feature.advanced_reports" = "Advanced Reports";
+"subscription.feature.custom_themes" = "Custom Themes";
+"subscription.feature.priority_support" = "Priority Support";
+"subscription.feature.api_key_support" = "API Key Support";
+
+// MARK: - Subscription Purchase
+"subscription.purchase.title" = "Confirm Purchase";
+"subscription.purchase.message" = "Are you sure you want to subscribe to %@?";
+"subscription.purchase.confirm" = "Subscribe";
+"subscription.purchase.pending" = "Purchase is pending approval";
+"subscription.purchase.unknown" = "Unknown purchase result";
+"subscription.purchase.success" = "Purchase Successful";
+"subscription.purchase.success_message" = "Your subscription has been activated!";
+
+// MARK: - Subscription Management
+"subscription.management.title" = "Subscription Management";
+"subscription.management.options" = "Management Options";
+"subscription.management.restore" = "Restore Purchases";
+"subscription.management.restore_subtitle" = "Restore your previous purchases";
+"subscription.management.cancel" = "Cancel Subscription";
+"subscription.management.cancel_subtitle" = "Cancel your current subscription";
+"subscription.management.contact" = "Contact Support";
+"subscription.management.contact_subtitle" = "Get help with your subscription";
+
+// MARK: - Subscription Status
+"subscription.status.none" = "No Subscription";
+"subscription.status.active" = "Active";
+"subscription.status.expired" = "Expired";
+"subscription.status.cancelled" = "Cancelled";
+"subscription.status.pending" = "Pending";
+"subscription.status.grace_period" = "Grace Period";
+
+// MARK: - Subscription Usage
+"subscription.usage.title" = "Usage Statistics";
+"subscription.unlimited" = "Unlimited";
+"subscription.feature" = "Feature";
+
+// MARK: - Subscription Upgrade
+"subscription.upgrade.title" = "Upgrade Your Plan";
+"subscription.upgrade.subtitle" = "Unlock more features and higher limits";
+"subscription.upgrade.button" = "Upgrade";
+"subscription.upgrade.confirm" = "Upgrade Now";
+"subscription.upgrade.message" = "Upgrade to unlock more features and higher usage limits.";
+
+// MARK: - Subscription Cancel
+"subscription.cancel.title" = "Cancel Subscription";
+"subscription.cancel.confirm" = "Cancel";
+"subscription.cancel.message" = "Your subscription will remain active until the end of the current billing period.";
+
+// MARK: - Subscription History
+"subscription.history.title" = "Subscription History";
+
+// MARK: - Subscription FAQ
+"subscription.faq.title" = "Frequently Asked Questions";
+"subscription.faq.q1" = "How does the free trial work?";
+"subscription.faq.a1" = "All paid plans come with a 7-day free trial. You can cancel anytime during the trial period without being charged.";
+"subscription.faq.q2" = "Can I change my subscription plan?";
+"subscription.faq.a2" = "Yes, you can upgrade or downgrade your plan at any time. Changes will take effect at your next billing cycle.";
+"subscription.faq.q3" = "How do I cancel my subscription?";
+"subscription.faq.a3" = "You can cancel your subscription through your Apple ID account settings or by contacting our support team.";
+
+// MARK: - Subscription Terms
+"subscription.terms_notice" = "By subscribing, you agree to our Terms of Service and Privacy Policy. Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period.";
+"subscription.terms" = "Terms of Service";
+"subscription.privacy" = "Privacy Policy";
+
+// MARK: - Subscription Features Comparison
+"subscription.features_comparison" = "Features Comparison";
+
+// MARK: - Subscription Limits
+"subscription.limit.reached" = "You've reached your %@ limit for %1. Upgrade to continue using this feature.";
+"subscription.limit.warning" = "You're running low on %@ usage. Only %1 remaining this month.";
+
+// MARK: - API Key Management
+"api_key.settings.title" = "API Key Settings";
+"api_key.settings.status" = "Status";
+"api_key.settings.status_header" = "API Key Status";
+"api_key.settings.own_key" = "Using your own API Key";
+"api_key.settings.last_validation" = "Last validated";
+"api_key.settings.input_header" = "API Key Configuration";
+"api_key.settings.enter_key" = "Enter your OpenAI API Key";
+"api_key.settings.placeholder" = "sk-...";
+"api_key.settings.help_text" = "Get your API key from OpenAI platform";
+"api_key.settings.validate" = "Validate";
+"api_key.settings.done" = "Done";
+"api_key.settings.edit" = "Edit";
+"api_key.settings.clear_key" = "Clear API Key";
+"api_key.settings.revalidate" = "Revalidate";
+"api_key.settings.usage_report" = "Usage Report";
+"api_key.settings.options_header" = "Options";
+"api_key.settings.usage_header" = "Usage Statistics";
+"api_key.settings.alert" = "API Key Settings";
+"api_key.settings.error.empty_key" = "Please enter an API key";
+"api_key.settings.error.invalid_key" = "Invalid API key";
+"api_key.settings.success.saved" = "API key saved successfully";
+"api_key.settings.success.valid" = "API key is valid";
+"api_key.settings.success.cleared" = "API key cleared";
+"api_key.settings.success.revalidated" = "API key revalidated";
+
+// API Key Status
+"api_key.status.none" = "No API Key";
+"api_key.status.invalid" = "Invalid API Key";
+"api_key.status.valid" = "Valid API Key";
+"api_key.status.expired" = "Expired API Key";
+"api_key.status.rate_limited" = "Rate Limited";
+"api_key.status.error" = "Error";
+
+// API Usage
+"api_key.usage.own_key" = "Using your own API Key - No limits";
+"api_key.usage.today" = "Today";
+"api_key.usage.monthly" = "This Month";
+"api_key.usage.cost" = "Total Cost";
+"api_key.usage.report.title" = "Usage Report";
+"api_key.usage.reset.title" = "Reset Usage";
+"api_key.usage.reset_monthly" = "Reset Monthly Usage";
+"api_key.usage.reset_all" = "Reset All Usage";
+
+// API Usage Status
+"api_usage.status.own_key" = "Using your own API Key";
+"api_usage.status.exceeded" = "Usage limit exceeded";
+"api_usage.status.near_limit" = "Approaching usage limit";
+"api_usage.status.normal" = "Normal usage";
+
+// Settings
+"settings.api_key" = "API Key";
+"settings.api_key_management" = "API Key Management";
+
+// MARK: - VGLA Panels
+"vglapanel.vision_dream.name" = "Dream Vision Panel";
+"vglapanel.vision_dream.description" = "Visualize your financial dreams and aspirations";
+"vglapanel.vision_mission.name" = "Mission Vision Panel";
+"vglapanel.vision_mission.description" = "Define your financial mission and purpose";
+"vglapanel.vision_legacy.name" = "Legacy Vision Panel";
+"vglapanel.vision_legacy.description" = "Plan your financial legacy and generational wealth";
+"vglapanel.vision_impact.name" = "Impact Vision Panel";
+"vglapanel.vision_impact.description" = "Create positive financial impact in your community";
+
+"vglapanel.goal_short.name" = "Short-term Goals Panel";
+"vglapanel.goal_short.description" = "Track and achieve your immediate financial goals";
+"vglapanel.goal_medium.name" = "Medium-term Goals Panel";
+"vglapanel.goal_medium.description" = "Plan and execute your 1-3 year financial objectives";
+"vglapanel.goal_long.name" = "Long-term Goals Panel";
+"vglapanel.goal_long.description" = "Build your 5+ year financial future";
+"vglapanel.goal_life.name" = "Life Goals Panel";
+"vglapanel.goal_life.description" = "Align your financial goals with life aspirations";
+
+"vglapanel.logic_analysis.name" = "Analysis Logic Panel";
+"vglapanel.logic_analysis.description" = "Deep dive into your financial data and patterns";
+"vglapanel.logic_strategy.name" = "Strategy Logic Panel";
+"vglapanel.logic_strategy.description" = "Develop comprehensive financial strategies";
+"vglapanel.logic_risk.name" = "Risk Logic Panel";
+"vglapanel.logic_risk.description" = "Assess and manage financial risks effectively";
+"vglapanel.logic_optimization.name" = "Optimization Logic Panel";
+"vglapanel.logic_optimization.description" = "Optimize your financial performance and efficiency";
+
+"vglapanel.action_immediate.name" = "Immediate Action Panel";
+"vglapanel.action_immediate.description" = "Take quick actions to improve your financial situation";
+"vglapanel.action_plan.name" = "Action Planning Panel";
+"vglapanel.action_plan.description" = "Create detailed action plans for your financial goals";
+"vglapanel.action_execution.name" = "Execution Action Panel";
+"vglapanel.action_execution.description" = "Execute your financial plans with precision";
+"vglapanel.action_review.name" = "Review Action Panel";
+"vglapanel.action_review.description" = "Review and adjust your financial actions regularly";
+
+// VGLA Dimensions
+"vgla.dimension.vision" = "Vision";
+"vgla.dimension.vision.description" = "Focus on long-term vision and purpose";
+"vgla.dimension.goal" = "Goal";
+"vgla.dimension.goal.description" = "Set and achieve financial objectives";
+"vgla.dimension.logic" = "Logic";
+"vgla.dimension.logic.description" = "Analyze and strategize with data";
+"vgla.dimension.action" = "Action";
+"vgla.dimension.action.description" = "Execute plans and take action";
+
+// Panel Store
+"panel.store.title" = "Panel Store";
+"panel.store.search.placeholder" = "Search panels...";
+"panel.my_panels.title" = "My Panels";
+"panel.stats.title" = "Panel Statistics";
+"panel.stats.total" = "Total";
+"panel.stats.purchased" = "Purchased";
+"panel.stats.default" = "Default";
+"panel.stats.premium" = "Premium";
+
+// Panel Details
+"panel.features.title" = "Features";
+"panel.tags.title" = "Tags";
+"panel.price" = "Price";
+"panel.purchase.button" = "Purchase";
+"panel.purchased" = "Purchased";
+"panel.purchase.title" = "Purchase Panel";
+"panel.purchase.confirm" = "Confirm your purchase";
+"panel.purchase.confirm.button" = "Purchase Now";
+
+// Panel Recommendations
+"panel.recommendation.title" = "Recommended for You";
+"panel.recommendation.description" = "Based on your VGLA assessment results";
+
+// Panel Quick Actions
+"panel.quick_actions.title" = "Quick Actions";
+"panel.quick_actions.browse" = "Browse";
+"panel.quick_actions.my_panels" = "My Panels";
+"panel.quick_actions.stats" = "Statistics";
+
+// Main Navigation
+"panels.title" = "Panels";
+
+// MARK: - Panel Store
+"panel.store.individual" = "Individual";
+"panel.store.bundles" = "Bundles";
+"panel.store.recommended" = "Recommended";
+"panel.store.recommended.title" = "Recommended for You";
+"panel.store.purchased" = "Purchased";
+"panel.store.free" = "Free";
+"panel.store.purchase" = "Purchase";
+"panel.store.purchase.alert" = "Purchase";
+"panel.store.purchase.success" = "Purchase successful!";
+"panel.store.purchase.error" = "Purchase failed. Please try again.";
+"panel.store.restore.success" = "Purchases restored successfully!";
+"panel.store.restore.error" = "Failed to restore purchases.";
+
+// Panel Details
+"panel.dimension.title" = "Dimension";
+"panel.price.one_time" = "One-time purchase";
+"panel.value" = "Value";
+"panel.value.description" = "Lifetime access to this panel";
+"panel.purchase.benefits.1" = "Lifetime access";
+"panel.purchase.benefits.2" = "Regular updates";
+"panel.purchase.benefits.3" = "Premium support";
+"panel.purchased.description" = "You have access to this panel";
+"panel.free.description" = "This panel is included for free";
+"panel.use_now" = "Use Now";
+
+// Panel Bundles
+"panel.bundle.subtitle" = "Complete Dimension Bundle";
+"panel.bundle.includes" = "Includes";
+"panel.bundle.vision.title" = "Vision Bundle";
+"panel.bundle.vision.description" = "All vision-focused panels for long-term planning";
+"panel.bundle.goal.title" = "Goal Bundle";
+"panel.bundle.goal.description" = "All goal-setting panels for achievement";
+"panel.bundle.logic.title" = "Logic Bundle";
+"panel.bundle.logic.description" = "All analytical panels for data-driven decisions";
+"panel.bundle.action.title" = "Action Bundle";
+"panel.bundle.action.description" = "All execution panels for taking action";
+"panel.bundle.all.title" = "Complete Bundle";
+"panel.bundle.all.description" = "All premium panels in one package";
+"panel.bundle.all_panels" = "All Premium Panels";
+
+// MARK: - Financial Health Dashboard
+"financial_health.dimension.income" = "Income Stability";
+"financial_health.dimension.income.description" = "Consistent and growing income";
+"financial_health.dimension.expenses" = "Expense Control";
+"financial_health.dimension.expenses.description" = "Managing spending effectively";
+"financial_health.dimension.savings" = "Savings Ability";
+"financial_health.dimension.savings.description" = "Building wealth over time";
+"financial_health.dimension.debt" = "Debt Management";
+"financial_health.dimension.debt.description" = "Controlling and reducing debt";
+"financial_health.dimension.investment" = "Investment Growth";
+"financial_health.dimension.investment.description" = "Growing wealth through investments";
+"financial_health.dimension.protection" = "Risk Protection";
+"financial_health.dimension.protection.description" = "Protecting against financial risks";
+
+"financial_health.level.excellent" = "Excellent";
+"financial_health.level.excellent.description" = "Outstanding financial health";
+"financial_health.level.good" = "Good";
+"financial_health.level.good.description" = "Strong financial foundation";
+"financial_health.level.fair" = "Fair";
+"financial_health.level.fair.description" = "Room for improvement";
+"financial_health.level.poor" = "Poor";
+"financial_health.level.poor.description" = "Needs attention";
+"financial_health.level.critical" = "Critical";
+"financial_health.level.critical.description" = "Immediate action required";
+
+"financial_health.score" = "Score";
+"financial_health.last_updated" = "Last Updated";
+"financial_health.dimensions.title" = "Financial Health Dimensions";
+"financial_health.trends.title" = "Health Trends";
+"financial_health.recommendations.title" = "Improvement Recommendations";
+"financial_health.recommendations.none" = "No recommendations needed";
+"financial_health.quick_actions.title" = "Quick Actions";
+"financial_health.quick_actions.add_transaction" = "Add Transaction";
+"financial_health.quick_actions.set_goal" = "Set Goal";
+"financial_health.quick_actions.analyze" = "Analyze";
+"financial_health.quick_actions.plan" = "Plan";
+
+"financial_health.detail.title" = "Financial Health Details";
+"financial_health.detail.dimensions" = "Dimensions";
+"financial_health.detail.breakdown" = "Breakdown";
+"financial_health.detail.insights" = "Insights";
+
+"financial_health.breakdown.overall" = "Overall Score Breakdown";
+"financial_health.breakdown.explanation.title" = "How Scores Are Calculated";
+"financial_health.breakdown.explanation.content" = "Each dimension is scored based on your financial data and industry benchmarks. Higher scores indicate better financial health in that area.";
+
+"financial_health.insights.strengths" = "Your Strengths";
+"financial_health.insights.no_strengths" = "Keep working on all areas";
+"financial_health.insights.improvements" = "Areas for Improvement";
+"financial_health.insights.no_improvements" = "You're doing great!";
+"financial_health.insights.recommendations" = "Recommended Actions";
+
+"recommendation.priority.high" = "High Priority";
+"recommendation.priority.medium" = "Medium Priority";
+"recommendation.priority.low" = "Low Priority";
+"recommendation.title" = "Recommendation";
+"recommendation.mark_read" = "Mark as Read";
+"recommendation.learn_more" = "Learn More";
+"recommendation.filter.all" = "All";
+
+"recommendation.income.stability" = "Focus on building multiple income streams";
+"recommendation.income.growth" = "Consider skills development for career advancement";
+"recommendation.expenses.control" = "Create and stick to a monthly budget";
+"recommendation.savings.rate" = "Aim to save at least 20% of your income";
+"recommendation.savings.emergency" = "Build an emergency fund covering 3-6 months of expenses";
+"recommendation.debt.reduction" = "Create a debt repayment plan";
+"recommendation.investment.optimization" = "Diversify your investment portfolio";
+"recommendation.protection.insurance" = "Review and update your insurance coverage";
+
+// MARK: - Investment Portfolio
+"investment.title" = "Investment Portfolio";
+"investment.overview" = "Overview";
+"investment.holdings" = "Holdings";
+"investment.performance" = "Performance";
+"investment.analysis" = "Analysis";
+"investment.add_investment" = "Add Investment";
+"investment.portfolio_settings" = "Portfolio Settings";
+"investment.create_portfolio" = "Create Portfolio";
+"investment.total_value" = "Total Value";
+"investment.gain_loss" = "Gain/Loss";
+"investment.percentage" = "Percentage";
+"investment.risk_level" = "Risk Level";
+"investment.asset_allocation" = "Asset Allocation";
+"investment.quick_stats" = "Quick Stats";
+"investment.total_investments" = "Total Investments";
+"investment.diversification" = "Diversification";
+"investment.risk_score" = "Risk Score";
+"investment.last_updated" = "Last Updated";
+"investment.recent_transactions" = "Recent Transactions";
+"investment.no_portfolio" = "No Investment Portfolio";
+"investment.no_portfolio.description" = "Create your first investment portfolio to start tracking your investments";
+"investment.no_holdings" = "No Holdings";
+"investment.no_holdings.description" = "Add your first investment to start building your portfolio";
+"investment.no_transactions" = "No transactions yet";
+"investment.search_placeholder" = "Search investments...";
+"investment.sort.value" = "Value";
+"investment.sort.gain_loss" = "Gain/Loss";
+"investment.sort.name" = "Name";
+"investment.sort.type" = "Type";
+"investment.filter.all" = "All";
+"investment.filter.stocks" = "Stocks";
+"investment.filter.bonds" = "Bonds";
+"investment.filter.crypto" = "Crypto";
+"investment.filter.others" = "Others";
+"investment.current_price" = "Current Price";
+"investment.day_change" = "Day Change";
+"investment.total_gain_loss" = "Total G/L";
+"investment.no_performance_data" = "No Performance Data";
+"investment.no_performance_data.description" = "Add investments to see performance charts and metrics";
+"investment.timeframe.1w" = "1W";
+"investment.timeframe.1m" = "1M";
+"investment.timeframe.3m" = "3M";
+"investment.timeframe.6m" = "6M";
+"investment.timeframe.1y" = "1Y";
+"investment.timeframe.all" = "All";
+"investment.total_return" = "Total Return";
+"investment.best_performer" = "Best Performer";
+"investment.performance_chart" = "Performance Chart";
+"investment.performance_metrics" = "Performance Metrics";
+"investment.annualized_return" = "Annualized Return";
+"investment.volatility" = "Volatility";
+"investment.sharpe_ratio" = "Sharpe Ratio";
+"investment.max_drawdown" = "Max Drawdown";
+"investment.performance_comparison" = "Performance Comparison";
+"investment.top_performers" = "Top Performers";
+"investment.worst_performers" = "Worst Performers";
+"investment.analysis_overview" = "Analysis Overview";
+"investment.overall_score" = "Overall Score";
+"investment.risk_analysis" = "Risk Analysis";
+"investment.diversification_analysis" = "Diversification Analysis";
+"investment.diversification_score" = "Diversification Score";
+"investment.investment_types" = "Investment Types";
+"investment.largest_allocation" = "Largest Allocation";
+"investment.diversification_recommendation" = "Consider diversifying across more asset types";
+"investment.asset_allocation_analysis" = "Asset Allocation Analysis";
+"investment.no_allocations" = "No allocations available";
+"investment.over_allocated" = "Over-allocated";
+"investment.rebalancing_recommendations" = "Rebalancing Recommendations";
+"investment.view_all" = "View All";
+"investment.no_rebalancing_needed" = "No rebalancing needed";
+"investment.rebalancing.increase" = "Increase";
+"investment.rebalancing.reduce" = "Reduce";
+"investment.recommendations" = "Recommendations";
+"investment.no_recommendations" = "No recommendations available";
+"investment.no_analysis_data" = "No Analysis Data";
+"investment.no_analysis_data.description" = "Add investments to see detailed analysis and recommendations";
+
+// Investment Types
+"investment.type.stock" = "Stock";
+"investment.type.bond" = "Bond";
+"investment.type.mutual_fund" = "Mutual Fund";
+"investment.type.etf" = "ETF";
+"investment.type.crypto" = "Cryptocurrency";
+"investment.type.real_estate" = "Real Estate";
+"investment.type.commodity" = "Commodity";
+"investment.type.other" = "Other";
+
+// Risk Levels
+"investment.risk.conservative" = "Conservative";
+"investment.risk.conservative.description" = "Low risk, stable returns";
+"investment.risk.moderate" = "Moderate";
+"investment.risk.moderate.description" = "Balanced risk and return";
+"investment.risk.aggressive" = "Aggressive";
+"investment.risk.aggressive.description" = "Higher risk, higher potential returns";
+"investment.risk.very_aggressive" = "Very Aggressive";
+"investment.risk.very_aggressive.description" = "Very high risk, very high potential returns";
+
+// Transaction Types
+"investment.transaction.buy" = "Buy";
+"investment.transaction.sell" = "Sell";
+"investment.transaction.dividend" = "Dividend";
+"investment.transaction.interest" = "Interest";
+"investment.transaction.split" = "Stock Split";
+"investment.transaction.merger" = "Merger";
+"investment.transaction.spin_off" = "Spin-off";
+
+// MARK: - Voice Accounting
+"voice_accounting.title" = "Voice Accounting";
+"voice_accounting.subtitle" = "Record your transactions using voice";
+"voice_accounting.nav_title" = "Voice Accounting";
+"voice_accounting.recording" = "Recording...";
+"voice_accounting.cancel" = "Cancel";
+"voice_accounting.tap_to_record" = "Tap to start recording";
+"voice_accounting.processing" = "Processing...";
+"voice_accounting.confidence" = "Confidence";
+"voice_accounting.transcription" = "Transcription";
+"voice_accounting.edit" = "Edit";
+"voice_accounting.process" = "Process";
+"voice_accounting.transaction_preview" = "Transaction Preview";
+"voice_accounting.preview" = "Preview";
+"voice_accounting.save_transaction" = "Save Transaction";
+"voice_accounting.permission_alert.title" = "Microphone Permission Required";
+"voice_accounting.permission_alert.message" = "Please allow microphone access to record your transactions.";
+
+// Voice Errors
+"voice.error.permission_denied" = "Microphone permission denied";
+"voice.error.recording_failed" = "Recording failed";
+"voice.error.audio_session" = "Audio session error";
+"voice.error.file_creation" = "Failed to create recording file";
+"voice.error.file_not_found" = "Recording file not found";
+"voice.error.file_too_large" = "Recording file too large (max 25MB)";
+"voice.error.transcription_failed" = "Transcription failed";
+"voice.error.unsupported_format" = "Unsupported audio format";
+"voice.error.network_error" = "Network connection error";
+
+// MARK: - Photo Accounting
+"photo_accounting.title" = "Photo Accounting";
+"photo_accounting.subtitle" = "Scan receipts and invoices with AI";
+"photo_accounting.nav_title" = "Photo Accounting";
+"photo_accounting.instructions.title" = "Take a clear photo of your receipt";
+"photo_accounting.instructions.description" = "Make sure the text is readable and the receipt is well-lit";
+"photo_accounting.take_photo" = "Take Photo";
+"photo_accounting.select_from_library" = "Select from Library";
+"photo_accounting.retake" = "Retake";
+"photo_accounting.process" = "Process";
+"photo_accounting.confidence" = "Confidence";
+"photo_accounting.merchant" = "Merchant";
+"photo_accounting.amount" = "Amount";
+"photo_accounting.date" = "Date";
+"photo_accounting.category" = "Category";
+"photo_accounting.items" = "Items";
+"photo_accounting.edit" = "Edit";
+"photo_accounting.create_transaction" = "Create Transaction";
+"photo_accounting.history" = "Recent Extractions";
+"photo_accounting.image_info.size" = "Size";
+"photo_accounting.image_info.format" = "Format";
+"photo_accounting.image_info.ocr_suitable" = "OCR Ready";
+
+// Photo Accounting Errors
+"photo_accounting.error.invalid_image" = "Invalid image format";
+"photo_accounting.error.text_recognition_failed" = "Text recognition failed";
+"photo_accounting.error.invalid_api_key" = "Invalid API key";
+"photo_accounting.error.rate_limit_exceeded" = "Rate limit exceeded";
+"photo_accounting.error.image_conversion_failed" = "Image conversion failed";
+"photo_accounting.error.invalid_response" = "Invalid AI response";
+"photo_accounting.error.unsupported_format" = "Unsupported image format";
+"photo_accounting.error.processing_timeout" = "Processing timeout";
+
+// MARK: - Interface Templates
+"template.classic" = "Classic";
+"template.classic.description" = "Traditional golden theme with warm colors";
+"template.modern" = "Modern";
+"template.modern.description" = "Clean blue theme with contemporary design";
+"template.elegant" = "Elegant";
+"template.elegant.description" = "Purple theme with sophisticated styling";
+"template.vibrant" = "Vibrant";
+"template.vibrant.description" = "Pink theme with energetic colors";
+"template.minimal" = "Minimal";
+"template.minimal.description" = "Gray theme with clean simplicity";
+"template.dark" = "Dark";
+"template.dark.description" = "Dark theme for comfortable viewing";
+"template.current_preview" = "Current Template Preview";
+"template.choose_template" = "Choose Your Template";
+"template.apply_template" = "Apply Template";
+"template.current" = "Current";
+"settings.interface_template" = "Interface Template";

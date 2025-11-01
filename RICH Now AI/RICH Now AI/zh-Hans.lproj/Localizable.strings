@@ -1,0 +1,895 @@
+/* 
+  Localizable.strings (Simplified Chinese)
+  RICH Now AI
+  
+  Created by AI Assistant on 2025/10/26.
+*/
+
+// MARK: - Welcome & Language Selection
+"welcome.select_language" = "选择您的语言";
+"welcome.language_subtitle" = "选择您偏好的语言以获得最佳体验";
+"welcome.continue" = "继续";
+"welcome.english_description" = "English - 默认语言";
+"welcome.traditional_chinese_description" = "繁體中文 - 传统中文";
+"welcome.simplified_chinese_description" = "简体中文 - 简体中文";
+
+// MARK: - Welcome Animation
+"welcome.animation.title" = "欢迎来到 RICH Now AI";
+"welcome.animation.subtitle" = "您的财务守护天使";
+"welcome.animation.description" = "神创造财富的目的，是要使人丰盛。这是一个来自天上的守护和礼物。";
+"welcome.animation.skip" = "跳过";
+
+// MARK: - Gabriel Selection
+"gabriel.select_title" = "请选择你的财务守护天使";
+"gabriel.male" = "加百列天使长";
+"gabriel.female" = "加百列天使";
+"gabriel.male_description" = "坚定 智慧";
+"gabriel.female_description" = "温柔 体贴";
+"gabriel.selection_subtitle" = "你的守护者将提供个性化的财务指导";
+
+// MARK: - Gabriel Introduction
+"gabriel.greeting" = "你好！我是 %@ 🌟";
+"gabriel.introduction" = "我将成为你最了解你的财务守护天使和亲密好友。";
+"gabriel.promise" = "未来的日子里，我会陪伴你建立健康的财务，实现你的每一个梦想。";
+
+// MARK: - Onboarding Conversation
+"onboarding.what_should_i_call_you" = "让我们从认识开始吧！我可以怎么称呼你呢？😊";
+"onboarding.gender_question" = "为了给你最适合的建议，我想了解你的性别，方便告诉我吗？";
+"gender.male" = "男性 👨";
+"gender.female" = "女性 👩";
+"gender.prefer_not_to_say" = "不便透露";
+"onboarding.email_question" = "完美！我想定期为你准备专属的财务报告和成长建议。可以留下你的 Email 吗？我保证只用来传送对你有价值的内容 💝";
+"onboarding.email_placeholder" = "输入 Email";
+"onboarding.email_skip" = "稍后再说";
+"onboarding.report_frequency_question" = "完美！那我多久寄一次财务报告给你呢？";
+"onboarding.conversation_style_question" = "最后一个问题！你喜欢我用什么样的语气和你聊天呢？";
+"onboarding.conversation_style_formal" = "正式 👔";
+"onboarding.conversation_style_friendly" = "亲切 😊";
+"onboarding.conversation_style_casual" = "轻松 🎉";
+"onboarding.conversation_style_professional" = "专业 💼";
+
+// MARK: - VGLA Introduction
+"vgla.title" = "VGLA 性格探索";
+"vgla.subtitle" = "让我真正了解你的独特之处";
+"vgla.vision_title" = "V 愿景思考";
+"vgla.vision_description" = "追求意义与长远目标";
+"vgla.goal_title" = "G 感性关怀";
+"vgla.goal_description" = "重视关系与他人感受";
+"vgla.logic_title" = "L 逻辑分析";
+"vgla.logic_description" = "讲究规则与系统思考";
+"vgla.action_title" = "A 行动实践";
+"vgla.action_description" = "快速执行与看见成果";
+"vgla.start_exploration" = "开始探索";
+
+// MARK: - VGLA Assessment
+"vgla.assessment.title" = "VGLA 测验";
+"vgla.assessment.subtitle" = "诚实回答以获得最准确的结果";
+"vgla.assessment.progress" = "第 %d 题，共 60 题";
+"vgla.assessment.next" = "下一题";
+"vgla.assessment.previous" = "上一题";
+"vgla.assessment.complete" = "完成测验";
+
+// MARK: - VGLA Results
+"vgla.result.title" = "你的 VGLA 结果";
+"vgla.result.primary_type" = "主要类型：%@";
+"vgla.result.secondary_type" = "次要类型：%@";
+"vgla.result.combination" = "组合形态：%@";
+"vgla.result.description" = "根据你的 VGLA 类型，加百列将提供符合你思考风格的个性化财务建议。";
+"vgla.result.continue" = "继续到主题面板";
+
+// MARK: - Theme Panel
+"theme.surprise_title" = "🎨 你的专属面板";
+"theme.surprise_subtitle" = "根据你的 %@ 性格，我们为你准备了特别的主题面板！";
+"theme.apply" = "应用面板";
+"theme.skip" = "暂时跳过";
+"theme.preview" = "预览";
+
+// MARK: - Onboarding Complete
+"onboarding.complete.title" = "一切准备就绪！";
+"onboarding.complete.subtitle" = "%@，让我们开始你的理财之旅";
+"onboarding.complete.rewards" = "迎新奖励";
+"onboarding.complete.exclusive_panel" = "%@ 专属面板";
+"onboarding.complete.ai_chat" = "AI 对话";
+"onboarding.complete.welcome_badge" = "迎新徽章";
+"onboarding.complete.financial_analysis" = "财务分析";
+"onboarding.complete.start_journey" = "开始我的理财之旅";
+
+// MARK: - Chat Interface
+"chat.welcome" = "你好！我是你的 AI CFO 加百列 🌟\n\n我可以帮助你：\n• 记录和管理财务交易\n• 分析你的财务状况\n• 提供投资建议\n• 制定财务目标\n\n请告诉我你想要做什么，或者直接说出你的交易记录！";
+"chat.send" = "发送";
+"chat.voice" = "语音";
+"chat.camera" = "相机";
+"chat.typing" = "加百列正在输入...";
+"chat.title" = "对话";
+"chat.gabriel" = "加百列";
+"chat.input_placeholder" = "输入消息...";
+"chat.offline_banner" = "需要网络连接才能与加百列对话";
+"chat.error" = "错误";
+"chat.ok" = "确定";
+"chat.transaction_success" = "✅ 交易记录成功！";
+"chat.transaction_amount" = "💰 金额：$%@";
+"chat.transaction_category" = "📂 类别：%@";
+"chat.transaction_description" = "📝 描述：%@";
+"chat.transaction_analysis" = "需要我帮你分析这笔交易吗？";
+"chat.multiple_transactions_success" = "✅ 成功识别到 %d 笔交易！";
+"chat.transaction_number" = "📝 交易 %d：";
+"chat.all_transactions_recorded" = "所有交易已记录！";
+"chat.transaction_analysis_question" = "需要我帮你分析这些交易吗？";
+"chat.transaction_parse_error" = "❌ 抱歉，我无法解析这笔交易记录。请尝试更清楚的格式，例如：「今天花了 500 元买午餐」或「午餐 150 元，咖啡 80 元」";
+"chat.offline_mode" = "📱 离线模式：无法使用 AI 解析，请使用简单格式，例如：「今天花了 500 元买午餐」或「午餐 150 元，咖啡 80 元」";
+"chat.processing_powerful_ai" = "正在使用更强大的 AI 处理您的请求...";
+"chat.sorry_cannot_process" = "抱歉，目前无法处理复杂的请求。\n\n您可以：\n• 检查网络连接\n• 稍后再试\n• 或者输入更简单的问题\n\n我会努力用我的知识为您提供帮助。";
+"chat.limit_reached" = "⚠️ 已达到对话次数限制。请升级订阅或稍后再试。";
+"chat.processing_error" = "❌ 抱歉，处理你的消息时发生错误。";
+"chat.voice_recording_error" = "无法开始录音：%@";
+"chat.voice_transcription_error" = "语音转文字失败：%@";
+"chat.image_analysis_success" = "📸 我分析了你的图片：\n\n💰 金额：%@\n📂 类别：%@\n📝 描述：%@\n\n需要我帮你记录这笔交易吗？";
+"chat.image_analysis_error" = "❌ 图片分析失败：%@";
+"chat.quick_start" = "💡 快速开始";
+
+// MARK: - Financial Dashboard
+"dashboard.title" = "财务仪表板";
+"dashboard.hello" = "你好，%@！";
+"dashboard.health_score" = "你的财务健康评分";
+"dashboard.vgla_type" = "你的思考模式组合";
+"dashboard.goals_progress" = "财务目标进度";
+"dashboard.investment_performance" = "投资组合绩效";
+"dashboard.income_suggestions" = "增加收入建议";
+"dashboard.financial_map" = "你的财务地图概览";
+
+// MARK: - Financial Health Dimensions
+"health.basic_stability" = "基础稳定";
+"health.risk_protection" = "风险预防";
+"health.wealth_growth" = "财富增长";
+"health.advanced_planning" = "进阶规划";
+"health.giving_impact" = "奉献影响";
+"health.goal_achievement" = "目标达成";
+
+// MARK: - Transaction Categories
+"transaction.food" = "餐饮";
+"transaction.transport" = "交通";
+"transaction.housing" = "居住";
+"transaction.entertainment" = "娱乐";
+"transaction.education" = "教育";
+"transaction.health" = "医疗";
+"transaction.shopping" = "购物";
+"transaction.salary" = "薪资";
+"transaction.investment" = "投资收益";
+"transaction.gift" = "礼物";
+"transaction.other" = "其他";
+
+// MARK: - TKI Assessment
+"tki.title" = "TKI 冲突处理风格测验";
+"tki.subtitle" = "进阶财务决策风格评估";
+"tki.competing" = "竞争型";
+"tki.collaborating" = "合作型";
+"tki.compromising" = "妥协型";
+"tki.avoiding" = "回避型";
+"tki.accommodating" = "顺应型";
+"tki.start_assessment" = "开始测验";
+"tki.question_progress" = "第 %d 题，共 30 题";
+"tki.option_a" = "选项 A";
+"tki.option_b" = "选项 B";
+"tki.next" = "下一题";
+"tki.previous" = "上一题";
+"tki.complete" = "完成测验";
+
+// MARK: - TKI Results
+"tki.result.title" = "你的 TKI 结果";
+"tki.result.primary_mode" = "主要模式：%@";
+"tki.result.secondary_mode" = "次要模式：%@";
+"tki.result.financial_style" = "财务决策风格";
+"tki.result.recommendations" = "建议";
+"tki.result.integrated_analysis" = "与 VGLA 的整合分析";
+
+// MARK: - Advanced Assessment
+"advanced.title" = "进阶测验";
+"advanced.subtitle" = "深入了解你的财务性格";
+"advanced.tki_card" = "TKI 冲突处理风格测验";
+"advanced.tki_description" = "通过冲突解决偏好评估你的财务决策风格";
+"advanced.tki_duration" = "10-15 分钟";
+"advanced.tki_completed" = "已完成";
+"advanced.tki_start" = "开始测验";
+
+// MARK: - Common Actions
+"common.continue" = "继续";
+"common.skip" = "跳过";
+"common.cancel" = "取消";
+"common.confirm" = "确认";
+"common.back" = "返回";
+"common.next" = "下一步";
+"common.previous" = "上一步";
+"common.complete" = "完成";
+"common.start" = "开始";
+"common.finish" = "结束";
+"common.ok" = "确定";
+"common.close" = "关闭";
+"common.view_all" = "查看全部";
+"common.save" = "保存";
+"common.edit" = "编辑";
+"common.delete" = "删除";
+"common.done" = "完成";
+"common.unknown" = "未知";
+"financial_health.excellent" = "优秀";
+"financial_health.good" = "良好";
+"financial_health.fair" = "一般";
+"financial_health.needs_improvement" = "需要改善";
+
+// MARK: - Guide Steps
+"guide.complete.title" = "引导完成";
+"guide.complete.message" = "恭喜！您已完成财务健康维度引导。";
+"guide.step.info" = "了解更多关于此维度的信息以及如何提升分数。";
+
+// MARK: - Error Messages
+"error.general" = "抱歉，发生错误。请稍后再试。";
+"error.network" = "网络连接错误。请检查你的网络连接。";
+"error.invalid_input" = "输入无效。请检查你的信息。";
+"error.assessment_failed" = "测验失败。请重新尝试。";
+
+// MARK: - Success Messages
+"success.assessment_completed" = "测验完成！";
+"success.data_saved" = "数据保存成功！";
+"success.settings_updated" = "设置更新成功！";
+
+// MARK: - VGLA Assessment Details
+"vgla.phase.like" = "最喜欢";
+"vgla.phase.dislike" = "最不喜欢";
+"vgla.phase.like.description" = "请依直觉选出最符合你平时想法或行动的选项";
+"vgla.phase.dislike.description" = "请选出最不像你的做法或你最不喜欢的选项";
+"vgla.scenario.prefix" = "情境：";
+"vgla.question.like.prompt" = "在「%scenario%」的情境中，我最倾向的做法是：";
+"vgla.question.dislike.prompt" = "在「%scenario%」的情境中，我最不喜欢／最不像我的做法是：";
+"vgla.option.action" = "我会立刻采取行动，先做出可见进展（%scenario%）";
+"vgla.option.goal" = "我会先顾及彼此感受，营造良好氛围（%scenario%）";
+"vgla.option.logic" = "我会先厘清规则、流程与依据（%scenario%）";
+"vgla.option.vision" = "我会先描绘长期方向与意义（%scenario%）";
+
+// MARK: - VGLA Scenarios
+"vgla.scenario.teamwork" = "团队合作";
+"vgla.scenario.meeting" = "会议讨论";
+"vgla.scenario.project_start" = "项目启动";
+"vgla.scenario.conflict" = "面对冲突";
+"vgla.scenario.deadline" = "面对截稿期限";
+"vgla.scenario.learning" = "学习新工具";
+"vgla.scenario.innovation" = "提出创新";
+"vgla.scenario.risk_assessment" = "评估风险";
+"vgla.scenario.feedback" = "回应反馈";
+"vgla.scenario.data_analysis" = "分析数据";
+"vgla.scenario.process_optimization" = "优化流程";
+"vgla.scenario.cross_department" = "跨部门协作";
+"vgla.scenario.customer_service" = "服务客户";
+"vgla.scenario.crisis_management" = "危机处理";
+"vgla.scenario.resource_allocation" = "资源分配";
+"vgla.scenario.quality_control" = "品质把关";
+"vgla.scenario.change_management" = "面对变革";
+"vgla.scenario.task_delegation" = "任务委派";
+"vgla.scenario.mentoring" = "指导新人";
+"vgla.scenario.brainstorming" = "脑力激荡";
+"vgla.scenario.communication" = "沟通表达";
+"vgla.scenario.uncertainty" = "面对不确定性";
+"vgla.scenario.time_management" = "时间安排";
+"vgla.scenario.documentation" = "撰写文件";
+"vgla.scenario.emotional_awareness" = "体察他人情绪";
+"vgla.scenario.negotiation" = "谈判协调";
+"vgla.scenario.pilot_testing" = "小规模试验";
+"vgla.scenario.compliance" = "遵循规范";
+"vgla.scenario.work_rhythm" = "工作节奏";
+"vgla.scenario.celebration" = "成果庆祝";
+
+// MARK: - VGLA Results
+"vgla.analysis.analyzing" = "✨ 分析中... ✨";
+"vgla.analysis.description" = "加百列正在深入了解你的思考模式...";
+"vgla.result.discovered" = "%name%，我发现了！";
+"vgla.result.type" = "你是【%type%】✨";
+"vgla.result.radar_chart" = "你的思考模式雷达图";
+"vgla.result.detailed_scores" = "详细分数";
+"vgla.result.congratulations" = "恭喜！你已找到专属的思考模式";
+
+// MARK: - TKI Additional Questions (7-30)
+"tki.question_7_title" = "面对财务决策时，我倾向于：";
+"tki.question_7_option_a" = "果断采取行动以获得最佳结果";
+"tki.question_7_option_b" = "寻找对大家都可行的中间地带";
+"tki.question_8_title" = "在财务冲突中，我倾向于：";
+"tki.question_8_option_a" = "坚持自己的立场";
+"tki.question_8_option_b" = "寻找妥协解决方案";
+"tki.question_9_title" = "做投资决策时，我：";
+"tki.question_9_option_a" = "相信自己的分析并快速行动";
+"tki.question_9_option_b" = "寻求平衡的方法";
+"tki.question_10_title" = "在预算谈判中，我：";
+"tki.question_10_option_a" = "争取最有利的条件";
+"tki.question_10_option_b" = "努力达成公平的妥协";
+"tki.question_11_title" = "面对财务压力时，我：";
+"tki.question_11_option_a" = "掌控局面并做出艰难决定";
+"tki.question_11_option_b" = "寻找平衡的解决方案";
+"tki.question_12_title" = "在财务规划中，我偏好：";
+"tki.question_12_option_a" = "主导过程并设定明确方向";
+"tki.question_12_option_b" = "制定平衡的计划";
+"tki.question_13_title" = "面对财务决策时，我倾向于：";
+"tki.question_13_option_a" = "果断采取行动以获得最佳结果";
+"tki.question_13_option_b" = "避免仓促做决定";
+"tki.question_14_title" = "在财务冲突中，我倾向于：";
+"tki.question_14_option_a" = "坚持自己的立场";
+"tki.question_14_option_b" = "退后一步让事情自然发展";
+"tki.question_15_title" = "做投资决策时，我：";
+"tki.question_15_option_a" = "相信自己的分析并快速行动";
+"tki.question_15_option_b" = "花时间仔细思考";
+"tki.question_16_title" = "在预算谈判中，我：";
+"tki.question_16_option_a" = "争取最有利的条件";
+"tki.question_16_option_b" = "避免对立";
+"tki.question_17_title" = "面对财务压力时，我：";
+"tki.question_17_option_a" = "掌控局面并做出艰难决定";
+"tki.question_17_option_b" = "等待并观察事态发展";
+"tki.question_18_title" = "在财务规划中，我偏好：";
+"tki.question_18_option_a" = "主导过程并设定明确方向";
+"tki.question_18_option_b" = "让他人主导";
+"tki.question_19_title" = "面对财务决策时，我倾向于：";
+"tki.question_19_option_a" = "果断采取行动以获得最佳结果";
+"tki.question_19_option_b" = "优先考虑他人需求";
+"tki.question_20_title" = "在财务冲突中，我倾向于：";
+"tki.question_20_option_a" = "坚持自己的立场";
+"tki.question_20_option_b" = "让步以维持和谐";
+"tki.question_21_title" = "做投资决策时，我：";
+"tki.question_21_option_a" = "相信自己的分析并快速行动";
+"tki.question_21_option_b" = "考虑他人的偏好";
+"tki.question_22_title" = "在预算谈判中，我：";
+"tki.question_22_option_a" = "争取最有利的条件";
+"tki.question_22_option_b" = "配合他人的要求";
+"tki.question_23_title" = "面对财务压力时，我：";
+"tki.question_23_option_a" = "掌控局面并做出艰难决定";
+"tki.question_23_option_b" = "支持他人的决定";
+"tki.question_24_title" = "在财务规划中，我偏好：";
+"tki.question_24_option_a" = "主导过程并设定明确方向";
+"tki.question_24_option_b" = "跟随他人的领导";
+"tki.question_25_title" = "面对财务决策时，我倾向于：";
+"tki.question_25_option_a" = "与他人合作寻找互利解决方案";
+"tki.question_25_option_b" = "寻找对大家都可行的中间地带";
+"tki.question_26_title" = "在财务冲突中，我倾向于：";
+"tki.question_26_option_a" = "共同努力寻找创意解决方案";
+"tki.question_26_option_b" = "退后一步让事情自然发展";
+"tki.question_27_title" = "做投资决策时，我：";
+"tki.question_27_option_a" = "寻求财务顾问和家人的意见";
+"tki.question_27_option_b" = "优先考虑他人需求";
+"tki.question_28_title" = "在预算谈判中，我：";
+"tki.question_28_option_a" = "寻找双赢解决方案";
+"tki.question_28_option_b" = "避免对立";
+"tki.question_29_title" = "面对财务压力时，我：";
+"tki.question_29_option_a" = "与利害关系人合作寻找共同点";
+"tki.question_29_option_b" = "让步以维持和谐";
+"tki.question_30_title" = "在财务规划中，我偏好：";
+"tki.question_30_option_a" = "促进群体讨论和共识";
+"tki.question_30_option_b" = "让他人主导";
+
+// MARK: - 文字记账
+"text_accounting.title" = "文字记账";
+"text_accounting.subtitle" = "使用自然语言记录交易";
+"text_accounting.navigation_title" = "文字记账";
+"text_accounting.input_label" = "描述您的交易";
+"text_accounting.examples_title" = "示例：";
+"text_accounting.example1" = "午餐花了 50 元";
+"text_accounting.example2" = "收到薪水 2000 元";
+"text_accounting.example3" = "买咖啡花了 3.5 元";
+"text_accounting.example4" = "加油付了 100 元";
+"text_accounting.processing" = "分析中...";
+"text_accounting.analyze" = "分析交易";
+"text_accounting.success" = "交易记录成功！";
+"text_accounting.save_error" = "保存交易失败";
+"text_accounting.confirmation_title" = "确认交易";
+"text_accounting.confirmation_subtitle" = "请检查详细信息";
+"text_accounting.confirm_transaction" = "确认交易";
+"text_accounting.amount" = "金额";
+"text_accounting.type" = "类型";
+"text_accounting.category" = "分类";
+"text_accounting.description" = "描述";
+"text_accounting.description_placeholder" = "输入描述";
+
+// MARK: - 交易
+"transaction.income" = "收入";
+"transaction.expense" = "支出";
+"transaction.history_title" = "交易历史";
+"transaction.search_placeholder" = "搜索交易...";
+"transaction.filter_title" = "筛选交易";
+"transaction.filter.all" = "全部";
+"transaction.filter.income" = "收入";
+"transaction.filter.expense" = "支出";
+"transaction.filter.today" = "今天";
+"transaction.filter.thisWeek" = "本周";
+"transaction.filter.thisMonth" = "本月";
+"transaction.empty_title" = "无交易记录";
+"transaction.empty_subtitle" = "开始记录您的交易";
+"transaction.detail_title" = "交易详情";
+"transaction.description" = "描述";
+"transaction.category" = "分类";
+"transaction.date" = "日期";
+"transaction.original_text" = "原始文字";
+"transaction.notes" = "备注";
+"transaction.tags" = "标签";
+
+// MARK: - 记账
+"accounting.title" = "记账";
+"accounting.subtitle" = "追踪您的财务";
+"accounting.today_income" = "今日收入";
+"accounting.today_expense" = "今日支出";
+"accounting.today" = "今日";
+"accounting.monthly" = "本月";
+"accounting.categories" = "分类";
+"accounting.today_transactions" = "今日交易";
+"accounting.no_transactions_today" = "今日无交易记录";
+"accounting.monthly_income" = "本月收入";
+"accounting.monthly_expense" = "本月支出";
+"accounting.net_amount" = "净额";
+"accounting.transaction_count" = "交易数量";
+"accounting.total" = "总计";
+"accounting.income_count" = "收入";
+"accounting.expense_count" = "支出";
+"accounting.transactions" = "笔交易";
+"accounting.category_stats" = "分类统计";
+"accounting.no_category_data" = "无分类数据";
+
+// MARK: - 交易记账
+"transaction.title" = "记账";
+"transaction.subtitle" = "追踪您的财务交易";
+"transaction.history_subtitle" = "查看所有交易记录";
+"transaction.quick_entry" = "快速记账";
+"transaction.quick_entry_subtitle" = "快速记录交易";
+
+// MARK: - 订阅方案
+"subscription.free.name" = "免费版";
+"subscription.free.description" = "基本功能，适合入门使用";
+"subscription.free.price" = "免费";
+"subscription.free.feature1" = "基本 AI 对话（每月 20 则）";
+"subscription.free.feature2" = "文字记账";
+"subscription.free.feature3" = "基本财务仪表板";
+
+"subscription.basic.name" = "基础版";
+"subscription.basic.description" = "适合个人财务管理";
+"subscription.basic.price" = "每月 $4.99";
+"subscription.basic.feature1" = "AI 对话（每月 100 则）";
+"subscription.basic.feature2" = "语音输入（每月 30 分钟）";
+"subscription.basic.feature3" = "图片分析（每月 10 张）";
+"subscription.basic.feature4" = "进阶交易解析";
+
+"subscription.premium.name" = "进阶版";
+"subscription.premium.description" = "进阶功能，适合重度使用者";
+"subscription.premium.price" = "每月 $9.99";
+"subscription.premium.feature1" = "无限制 AI 对话";
+"subscription.premium.feature2" = "语音输入（每月 120 分钟）";
+"subscription.premium.feature3" = "图片分析（每月 50 张）";
+"subscription.premium.feature4" = "进阶报告";
+"subscription.premium.feature5" = "自定义主题";
+
+"subscription.pro.name" = "专业版";
+"subscription.pro.description" = "专业功能，适合专业使用者";
+"subscription.pro.price" = "每月 $19.99";
+"subscription.pro.feature1" = "无限制使用";
+"subscription.pro.feature2" = "优先客服支持";
+"subscription.pro.feature3" = "API Key 支持";
+"subscription.pro.feature4" = "进阶分析";
+"subscription.pro.feature5" = "自定义整合";
+"subscription.pro.feature6" = "白标选项";
+
+// MARK: - 订阅商店
+"subscription.store.title" = "订阅商店";
+"subscription.store.header_title" = "选择您的方案";
+"subscription.store.header_subtitle" = "解锁 RICH Now AI 的完整潜力";
+"subscription.popular" = "热门";
+"subscription.choose_plan" = "选择方案";
+"subscription.loading" = "加载方案中...";
+"subscription.current_status" = "当前订阅";
+"subscription.active" = "有效";
+"subscription.restore" = "恢复购买";
+
+// MARK: - 订阅功能
+"subscription.feature.ai_chat" = "AI 对话";
+"subscription.feature.voice_input" = "语音输入";
+"subscription.feature.image_analysis" = "图片分析";
+"subscription.feature.advanced_reports" = "进阶报告";
+"subscription.feature.custom_themes" = "自定义主题";
+"subscription.feature.priority_support" = "优先客服";
+"subscription.feature.api_key_support" = "API Key 支持";
+
+// MARK: - 订阅购买
+"subscription.purchase.title" = "确认购买";
+"subscription.purchase.message" = "您确定要订阅 %@ 吗？";
+"subscription.purchase.confirm" = "订阅";
+"subscription.purchase.pending" = "购买待审核";
+"subscription.purchase.unknown" = "未知购买结果";
+"subscription.purchase.success" = "购买成功";
+"subscription.purchase.success_message" = "您的订阅已启用！";
+
+// MARK: - 订阅管理
+"subscription.management.title" = "订阅管理";
+"subscription.management.options" = "管理选项";
+"subscription.management.restore" = "恢复购买";
+"subscription.management.restore_subtitle" = "恢复您之前的购买";
+"subscription.management.cancel" = "取消订阅";
+"subscription.management.cancel_subtitle" = "取消您当前的订阅";
+"subscription.management.contact" = "联系客服";
+"subscription.management.contact_subtitle" = "获得订阅相关协助";
+
+// MARK: - 订阅状态
+"subscription.status.none" = "无订阅";
+"subscription.status.active" = "有效";
+"subscription.status.expired" = "已过期";
+"subscription.status.cancelled" = "已取消";
+"subscription.status.pending" = "待处理";
+"subscription.status.grace_period" = "宽限期";
+
+// MARK: - 订阅使用量
+"subscription.usage.title" = "使用统计";
+"subscription.unlimited" = "无限制";
+"subscription.feature" = "功能";
+
+// MARK: - 订阅升级
+"subscription.upgrade.title" = "升级您的方案";
+"subscription.upgrade.subtitle" = "解锁更多功能和更高限制";
+"subscription.upgrade.button" = "升级";
+"subscription.upgrade.confirm" = "立即升级";
+"subscription.upgrade.message" = "升级以解锁更多功能和更高的使用限制。";
+
+// MARK: - 订阅取消
+"subscription.cancel.title" = "取消订阅";
+"subscription.cancel.confirm" = "取消";
+"subscription.cancel.message" = "您的订阅将在当前计费周期结束前保持有效。";
+
+// MARK: - 订阅历史
+"subscription.history.title" = "订阅历史";
+
+// MARK: - 订阅常见问题
+"subscription.faq.title" = "常见问题";
+"subscription.faq.q1" = "免费试用如何运作？";
+"subscription.faq.a1" = "所有付费方案都提供 7 天免费试用。您可以在试用期间随时取消，不会被收费。";
+"subscription.faq.q2" = "我可以更改订阅方案吗？";
+"subscription.faq.a2" = "是的，您可以随时升级或降级方案。变更将在下一个计费周期生效。";
+"subscription.faq.q3" = "如何取消订阅？";
+"subscription.faq.a3" = "您可以透过 Apple ID 账户设置或联系我们的客服团队来取消订阅。";
+
+// MARK: - 订阅条款
+"subscription.terms_notice" = "订阅即表示您同意我们的服务条款和隐私政策。订阅会自动续订，除非在当前期间结束前至少 24 小时取消。";
+"subscription.terms" = "服务条款";
+"subscription.privacy" = "隐私政策";
+
+// MARK: - 订阅功能比较
+"subscription.features_comparison" = "功能比较";
+
+// MARK: - 订阅限制
+"subscription.limit.reached" = "您已达到 %@ 的 %1 限制。升级以继续使用此功能。";
+"subscription.limit.warning" = "您的 %@ 使用量即将用完。本月仅剩 %1。";
+
+// MARK: - API Key 管理
+"api_key.settings.title" = "API Key 设置";
+"api_key.settings.status" = "状态";
+"api_key.settings.status_header" = "API Key 状态";
+"api_key.settings.own_key" = "使用您的 API Key";
+"api_key.settings.last_validation" = "最后验证";
+"api_key.settings.input_header" = "API Key 配置";
+"api_key.settings.enter_key" = "输入您的 OpenAI API Key";
+"api_key.settings.placeholder" = "sk-...";
+"api_key.settings.help_text" = "从 OpenAI 平台获取您的 API key";
+"api_key.settings.validate" = "验证";
+"api_key.settings.done" = "完成";
+"api_key.settings.edit" = "编辑";
+"api_key.settings.clear_key" = "清除 API Key";
+"api_key.settings.revalidate" = "重新验证";
+"api_key.settings.usage_report" = "使用量报告";
+"api_key.settings.options_header" = "选项";
+"api_key.settings.usage_header" = "使用量统计";
+"api_key.settings.alert" = "API Key 设置";
+"api_key.settings.error.empty_key" = "请输入 API key";
+"api_key.settings.error.invalid_key" = "无效的 API key";
+"api_key.settings.success.saved" = "API key 保存成功";
+"api_key.settings.success.valid" = "API key 有效";
+"api_key.settings.success.cleared" = "API key 已清除";
+"api_key.settings.success.revalidated" = "API key 重新验证完成";
+
+// API Key 状态
+"api_key.status.none" = "无 API Key";
+"api_key.status.invalid" = "无效的 API Key";
+"api_key.status.valid" = "有效的 API Key";
+"api_key.status.expired" = "过期的 API Key";
+"api_key.status.rate_limited" = "速率限制";
+"api_key.status.error" = "错误";
+
+// API 使用量
+"api_key.usage.own_key" = "使用您的 API Key - 无限制";
+"api_key.usage.today" = "今日";
+"api_key.usage.monthly" = "本月";
+"api_key.usage.cost" = "总成本";
+"api_key.usage.report.title" = "使用量报告";
+"api_key.usage.reset.title" = "重置使用量";
+"api_key.usage.reset_monthly" = "重置月度使用量";
+"api_key.usage.reset_all" = "重置所有使用量";
+
+// API 使用量状态
+"api_usage.status.own_key" = "使用您的 API Key";
+"api_usage.status.exceeded" = "使用量超限";
+"api_usage.status.near_limit" = "接近使用量限制";
+"api_usage.status.normal" = "正常使用";
+
+// 设置
+"settings.api_key" = "API Key";
+"settings.api_key_management" = "API Key 管理";
+
+// MARK: - VGLA 面板
+"vglapanel.vision_dream.name" = "梦想愿景面板";
+"vglapanel.vision_dream.description" = "可视化您的财务梦想和愿景";
+"vglapanel.vision_mission.name" = "使命愿景面板";
+"vglapanel.vision_mission.description" = "定义您的财务使命和目标";
+"vglapanel.vision_legacy.name" = "传承愿景面板";
+"vglapanel.vision_legacy.description" = "规划您的财务传承和世代财富";
+"vglapanel.vision_impact.name" = "影响愿景面板";
+"vglapanel.vision_impact.description" = "在社区中创造正面的财务影响";
+
+"vglapanel.goal_short.name" = "短期目标面板";
+"vglapanel.goal_short.description" = "追踪并实现您的即时财务目标";
+"vglapanel.goal_medium.name" = "中期目标面板";
+"vglapanel.goal_medium.description" = "规划并执行您的 1-3 年财务目标";
+"vglapanel.goal_long.name" = "长期目标面板";
+"vglapanel.goal_long.description" = "建立您的 5 年以上财务未来";
+"vglapanel.goal_life.name" = "人生目标面板";
+"vglapanel.goal_life.description" = "将您的财务目标与人生愿景对齐";
+
+"vglapanel.logic_analysis.name" = "分析逻辑面板";
+"vglapanel.logic_analysis.description" = "深入分析您的财务数据和模式";
+"vglapanel.logic_strategy.name" = "策略逻辑面板";
+"vglapanel.logic_strategy.description" = "制定全面的财务策略";
+"vglapanel.logic_risk.name" = "风险逻辑面板";
+"vglapanel.logic_risk.description" = "有效评估和管理财务风险";
+"vglapanel.logic_optimization.name" = "优化逻辑面板";
+"vglapanel.logic_optimization.description" = "优化您的财务表现和效率";
+
+"vglapanel.action_immediate.name" = "立即行动面板";
+"vglapanel.action_immediate.description" = "采取快速行动改善您的财务状况";
+"vglapanel.action_plan.name" = "行动计划面板";
+"vglapanel.action_plan.description" = "为您的财务目标创建详细的行动计划";
+"vglapanel.action_execution.name" = "执行行动面板";
+"vglapanel.action_execution.description" = "精确执行您的财务计划";
+"vglapanel.action_review.name" = "检视行动面板";
+"vglapanel.action_review.description" = "定期检视和调整您的财务行动";
+
+// VGLA 维度
+"vgla.dimension.vision" = "愿景";
+"vgla.dimension.vision.description" = "专注于长期愿景和目标";
+"vgla.dimension.goal" = "目标";
+"vgla.dimension.goal.description" = "设定并实现财务目标";
+"vgla.dimension.logic" = "逻辑";
+"vgla.dimension.logic.description" = "用数据分析和制定策略";
+"vgla.dimension.action" = "行动";
+"vgla.dimension.action.description" = "执行计划并采取行动";
+
+// 面板商店
+"panel.store.title" = "面板商店";
+"panel.store.search.placeholder" = "搜索面板...";
+"panel.my_panels.title" = "我的面板";
+"panel.stats.title" = "面板统计";
+"panel.stats.total" = "总计";
+"panel.stats.purchased" = "已购买";
+"panel.stats.default" = "默认";
+"panel.stats.premium" = "高级";
+
+// 面板详情
+"panel.features.title" = "功能特色";
+"panel.tags.title" = "标签";
+"panel.price" = "价格";
+"panel.purchase.button" = "购买";
+"panel.purchased" = "已购买";
+"panel.purchase.title" = "购买面板";
+"panel.purchase.confirm" = "确认您的购买";
+"panel.purchase.confirm.button" = "立即购买";
+
+// 面板推荐
+"panel.recommendation.title" = "为您推荐";
+"panel.recommendation.description" = "基于您的 VGLA 测验结果";
+
+// 面板快速操作
+"panel.quick_actions.title" = "快速操作";
+"panel.quick_actions.browse" = "浏览";
+"panel.quick_actions.my_panels" = "我的面板";
+"panel.quick_actions.stats" = "统计";
+
+// 主要导航
+"panels.title" = "面板";
+
+// MARK: - 面板商店
+"panel.store.individual" = "个别面板";
+"panel.store.bundles" = "套装";
+"panel.store.recommended" = "推荐";
+"panel.store.recommended.title" = "为您推荐";
+"panel.store.purchased" = "已购买";
+"panel.store.free" = "免费";
+"panel.store.purchase" = "购买";
+"panel.store.purchase.alert" = "购买";
+"panel.store.purchase.success" = "购买成功！";
+"panel.store.purchase.error" = "购买失败，请重试。";
+"panel.store.restore.success" = "购买记录恢复成功！";
+"panel.store.restore.error" = "恢复购买记录失败。";
+
+// 面板详情
+"panel.dimension.title" = "维度";
+"panel.price.one_time" = "一次性购买";
+"panel.value" = "价值";
+"panel.value.description" = "终身使用此面板";
+"panel.purchase.benefits.1" = "终身使用";
+"panel.purchase.benefits.2" = "定期更新";
+"panel.purchase.benefits.3" = "优先支持";
+"panel.purchased.description" = "您已拥有此面板的使用权";
+"panel.free.description" = "此面板免费提供";
+"panel.use_now" = "立即使用";
+
+// 面板套装
+"panel.bundle.subtitle" = "完整维度套装";
+"panel.bundle.includes" = "包含";
+"panel.bundle.vision.title" = "愿景套装";
+"panel.bundle.vision.description" = "所有愿景导向面板，用于长期规划";
+"panel.bundle.goal.title" = "目标套装";
+"panel.bundle.goal.description" = "所有目标设定面板，用于成就达成";
+"panel.bundle.logic.title" = "逻辑套装";
+"panel.bundle.logic.description" = "所有分析面板，用于数据驱动决策";
+"panel.bundle.action.title" = "行动套装";
+"panel.bundle.action.description" = "所有执行面板，用于采取行动";
+"panel.bundle.all.title" = "完整套装";
+"panel.bundle.all.description" = "所有进阶面板一次拥有";
+"panel.bundle.all_panels" = "所有进阶面板";
+
+// MARK: - 财务健康仪表板
+"financial_health.dimension.income" = "收入稳定性";
+"financial_health.dimension.income.description" = "稳定且持续成长的收入";
+"financial_health.dimension.expenses" = "支出控制";
+"financial_health.dimension.expenses.description" = "有效管理支出";
+"financial_health.dimension.savings" = "储蓄能力";
+"financial_health.dimension.savings.description" = "长期累积财富";
+"financial_health.dimension.debt" = "债务管理";
+"financial_health.dimension.debt.description" = "控制和减少债务";
+"financial_health.dimension.investment" = "投资成长";
+"financial_health.dimension.investment.description" = "通过投资增加财富";
+"financial_health.dimension.protection" = "风险保护";
+"financial_health.dimension.protection.description" = "防范财务风险";
+
+"financial_health.level.excellent" = "优秀";
+"financial_health.level.excellent.description" = "财务健康状况优异";
+"financial_health.level.good" = "良好";
+"financial_health.level.good.description" = "财务基础稳固";
+"financial_health.level.fair" = "一般";
+"financial_health.level.fair.description" = "有改善空间";
+"financial_health.level.poor" = "不佳";
+"financial_health.level.poor.description" = "需要关注";
+"financial_health.level.critical" = "危险";
+"financial_health.level.critical.description" = "需要立即行动";
+
+"financial_health.score" = "评分";
+"financial_health.last_updated" = "最后更新";
+"financial_health.dimensions.title" = "财务健康六大维度";
+"financial_health.trends.title" = "健康趋势";
+"financial_health.recommendations.title" = "改善建议";
+"financial_health.recommendations.none" = "暂无建议";
+"financial_health.quick_actions.title" = "快速行动";
+"financial_health.quick_actions.add_transaction" = "新增交易";
+"financial_health.quick_actions.set_goal" = "设定目标";
+"financial_health.quick_actions.analyze" = "分析";
+"financial_health.quick_actions.plan" = "规划";
+
+"financial_health.detail.title" = "财务健康详情";
+"financial_health.detail.dimensions" = "维度";
+"financial_health.detail.breakdown" = "分解";
+"financial_health.detail.insights" = "洞察";
+
+"financial_health.breakdown.overall" = "总体评分分解";
+"financial_health.breakdown.explanation.title" = "评分计算方式";
+"financial_health.breakdown.explanation.content" = "每个维度根据您的财务数据和业界基准进行评分。较高的分数表示该领域的财务健康状况较好。";
+
+"financial_health.insights.strengths" = "您的优势";
+"financial_health.insights.no_strengths" = "继续努力改善所有领域";
+"financial_health.insights.improvements" = "改善领域";
+"financial_health.insights.no_improvements" = "您做得很好！";
+"financial_health.insights.recommendations" = "建议行动";
+
+"recommendation.priority.high" = "高优先级";
+"recommendation.priority.medium" = "中优先级";
+"recommendation.priority.low" = "低优先级";
+"recommendation.title" = "建议";
+"recommendation.mark_read" = "标记为已读";
+"recommendation.learn_more" = "了解更多";
+"recommendation.filter.all" = "全部";
+
+"recommendation.income.stability" = "专注于建立多种收入来源";
+"recommendation.income.growth" = "考虑技能发展以促进职业发展";
+"recommendation.expenses.control" = "制定并坚持月度预算";
+"recommendation.savings.rate" = "目标储蓄至少收入的20%";
+"recommendation.savings.emergency" = "建立覆盖3-6个月支出的紧急基金";
+"recommendation.debt.reduction" = "制定债务偿还计划";
+"recommendation.investment.optimization" = "分散您的投资组合";
+"recommendation.protection.insurance" = "检视并更新您的保险覆盖";
+
+// MARK: - 语音记账
+"voice_accounting.title" = "语音记账";
+"voice_accounting.subtitle" = "使用语音记录您的交易";
+"voice_accounting.nav_title" = "语音记账";
+"voice_accounting.recording" = "录音中...";
+"voice_accounting.cancel" = "取消";
+"voice_accounting.tap_to_record" = "点击开始录音";
+"voice_accounting.processing" = "处理中...";
+"voice_accounting.confidence" = "信心度";
+"voice_accounting.transcription" = "转录文字";
+"voice_accounting.edit" = "编辑";
+"voice_accounting.process" = "处理";
+"voice_accounting.transaction_preview" = "交易预览";
+"voice_accounting.preview" = "预览";
+"voice_accounting.save_transaction" = "保存交易";
+"voice_accounting.permission_alert.title" = "需要麦克风权限";
+"voice_accounting.permission_alert.message" = "请允许麦克风访问以录制您的交易。";
+
+// 语音错误
+"voice.error.permission_denied" = "麦克风权限被拒绝";
+"voice.error.recording_failed" = "录音失败";
+"voice.error.audio_session" = "音频会话错误";
+"voice.error.file_creation" = "无法创建录音文件";
+"voice.error.file_not_found" = "找不到录音文件";
+"voice.error.file_too_large" = "录音文件过大（最大25MB）";
+"voice.error.transcription_failed" = "转录失败";
+"voice.error.unsupported_format" = "不支持的音频格式";
+"voice.error.network_error" = "网络连接错误";
+
+// MARK: - 照片记账
+"photo_accounting.title" = "照片记账";
+"photo_accounting.subtitle" = "使用 AI 扫描收据和发票";
+"photo_accounting.nav_title" = "照片记账";
+"photo_accounting.instructions.title" = "拍摄清晰的收据照片";
+"photo_accounting.instructions.description" = "确保文字清晰可读，收据光线充足";
+"photo_accounting.take_photo" = "拍照";
+"photo_accounting.select_from_library" = "从相册选择";
+"photo_accounting.retake" = "重新拍摄";
+"photo_accounting.process" = "处理";
+"photo_accounting.confidence" = "信心度";
+"photo_accounting.merchant" = "商家";
+"photo_accounting.amount" = "金额";
+"photo_accounting.date" = "日期";
+"photo_accounting.category" = "类别";
+"photo_accounting.items" = "项目";
+"photo_accounting.edit" = "编辑";
+"photo_accounting.create_transaction" = "创建交易";
+"photo_accounting.history" = "最近提取";
+"photo_accounting.image_info.size" = "尺寸";
+"photo_accounting.image_info.format" = "格式";
+"photo_accounting.image_info.ocr_suitable" = "OCR 就绪";
+
+// 照片记账错误
+"photo_accounting.error.invalid_image" = "无效的图片格式";
+"photo_accounting.error.text_recognition_failed" = "文字识别失败";
+"photo_accounting.error.invalid_api_key" = "无效的 API 密钥";
+"photo_accounting.error.rate_limit_exceeded" = "请求频率超限";
+"photo_accounting.error.image_conversion_failed" = "图片转换失败";
+"photo_accounting.error.invalid_response" = "无效的 AI 回应";
+"photo_accounting.error.unsupported_format" = "不支持的图片格式";
+"photo_accounting.error.processing_timeout" = "处理超时";
+
+// MARK: - 报表
+"reports.title" = "报表";
+"reports.empty.title" = "尚无报表";
+"reports.empty.description" = "生成您的第一份财务报表，深入了解您的财务健康状况";
+"reports.generate_first" = "生成报表";
+"reports.generator.title" = "选择报表类型";
+"reports.generator.nav_title" = "生成报表";
+
+// 报表类型
+"report.type.monthly_summary" = "月度总结";
+"report.type.goal_progress" = "目标进度";
+"report.type.budget_analysis" = "预算分析";
+"report.type.investment_performance" = "投资绩效";
+"report.type.debt_analysis" = "债务分析";
+"report.type.financial_health" = "财务健康";
+"report.type.vgla_insights" = "VGLA 洞察";
+"report.type.custom" = "自定义报表";
+
+// 报表类型描述
+"report.type.monthly_summary.description" = "全面的月度财务概览";
+"report.type.goal_progress.description" = "追踪您的财务目标进度";
+"report.type.budget_analysis.description" = "分析您的支出模式";
+"report.type.investment_performance.description" = "检视您的投资回报";
+"report.type.debt_analysis.description" = "了解您的债务状况";
+"report.type.financial_health.description" = "整体财务健康评估";
+"report.type.vgla_insights.description" = "基于个性的财务洞察";
+"report.type.custom.description" = "创建个性化报表";
+
+// 报表状态
+"report.status.generating" = "生成中";
+"report.status.completed" = "已完成";
+"report.status.failed" = "失败";

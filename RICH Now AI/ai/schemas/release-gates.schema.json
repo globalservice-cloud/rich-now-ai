@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReleaseGates",
+  "type": "object",
+  "required": [
+    "dataQuality",
+    "tests",
+    "slo",
+    "signoff",
+    "flagStrategy"
+  ],
+  "properties": {
+    "dataQuality": {
+      "type": "boolean"
+    },
+    "tests": {
+      "type": "boolean"
+    },
+    "slo": {
+      "type": "boolean"
+    },
+    "signoff": {
+      "type": "boolean"
+    },
+    "flagStrategy": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

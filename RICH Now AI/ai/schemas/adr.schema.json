@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ADR",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "context",
+    "options",
+    "decision",
+    "consequences",
+    "rollback"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "consequences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback": {
+      "type": "string"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

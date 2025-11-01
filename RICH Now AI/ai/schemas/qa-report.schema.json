@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QAReport",
+  "type": "object",
+  "required": [
+    "summary",
+    "coverage",
+    "cases",
+    "result"
+  ],
+  "properties": {
+    "summary": {
+      "type": "string"
+    },
+    "coverage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "result": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
