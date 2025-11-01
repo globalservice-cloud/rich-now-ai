@@ -1,0 +1,12 @@
+{
+  "title": "Rich Now AI｜登入/掃碼快速導入流程",
+  "motivation": "提升首次使用成功率與留存",
+  "scope": { "in": ["登入頁UI","QR導入","教學提示"], "out": ["推播","支付"] },
+  "acceptanceCriteria": ["FTUE完成率>=85%","登入成功率>=95%"],
+  "risks": ["第三方登入API延遲"],
+  "milestones": [
+    {"name": "規格凍結", "eta": "2025-11-05"},
+    {"name": "開發完成", "eta": "2025-11-15"}
+  ],
+  "links": []
+}
