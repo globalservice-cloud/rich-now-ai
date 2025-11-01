@@ -1,4 +1,4 @@
-name: Weekly Status Report
+name: Weekly Status Report (Artifact only)
 
 on:
   schedule:
@@ -8,7 +8,7 @@ on:
     paths: ["ai/outputs/**"]
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: weekly-status-${{ github.ref }}
@@ -19,21 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
 
       - uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Generate STATUS.md (CJS)
+      - name: Generate STATUS.md
         run: |
           node <<'NODE'
           const fs = require('fs');
           const path = require('path');
-          const outDir = path.join('ai','outputs');
-          const load = f => { try { return JSON.parse(fs.readFileSync(path.join(outDir,f),'utf8')) } catch { return null } };
+          const out = path.join('ai','outputs');
+          const load = f => { try { return JSON.parse(fs.readFileSync(path.join(out,f),'utf8')) } catch { return null } };
+
           const rfc   = load('rfc.json');
           const adr   = load('adr.json');
           const qa    = load('qa-report.json');
@@ -57,41 +55,7 @@ jobs:
           console.log('✅ STATUS.md generated');
           NODE
 
-      - name: Detect branch & sync
-        id: sync
-        run: |
-          set -e
-          BRANCH="$(git rev-parse --abbrev-ref HEAD || echo "${GITHUB_REF_NAME}")"
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-          echo "Working on branch: $BRANCH"
-          git fetch origin "$BRANCH" --depth=1 || true
-          git pull --rebase origin "$BRANCH" || true
-
-      - name: Commit changes (non-PR only)
-        if: github.event_name != 'pull_request'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add STATUS.md
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore(report): weekly STATUS.md"
-          fi
-
-      - name: Push changes (non-PR only, soft-fail)
-        if: github.event_name != 'pull_request'
-        continue-on-error: true
-        env:
-          BRANCH_NAME: ${{ steps.sync.outputs.branch }}
-        run: |
-          if git rev-parse --verify HEAD >/dev/null 2>&1 && git log -1 --pretty=%B | grep -q "chore(report): weekly STATUS.md"; then
-            git push origin "$BRANCH_NAME" || echo "⚠️ push failed; will upload artifact instead"
-          else
-            echo "Nothing to push."
-          fi
-
-      - name: Upload STATUS.md as artifact (always)
+      - name: Upload STATUS.md as artifact
         uses: actions/upload-artifact@v4
         with:
           name: STATUS
