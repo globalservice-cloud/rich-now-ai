@@ -1,1 +1,62 @@
-# (貼上我上面給你的第 2 支 YAML 的完整內容)
+name: Weekly Status Report (Artifact only)
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"   # 週一 09:00 台北 (UTC+8)
+  workflow_dispatch:
+  push:
+    paths: ["ai/outputs/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-status-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate STATUS.md
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const out = path.join('ai','outputs');
+          const load = f => { try { return JSON.parse(fs.readFileSync(path.join(out,f),'utf8')) } catch { return null } };
+
+          const rfc   = load('rfc.json');
+          const adr   = load('adr.json');
+          const qa    = load('qa-report.json');
+          const gates = load('release-gates.json');
+
+          const L = [];
+          L.push('# Weekly Status');
+          L.push('*Generated:* '+new Date().toISOString());
+          if(rfc){ L.push('## RFC','- **Title**: '+(rfc.title||''),'- **Milestones**: '+JSON.stringify(rfc.milestones||[])); }
+          if(adr){ L.push('## ADR','- **Decision**: '+(adr.decision||'')); }
+          if(qa){  L.push('## QA','- **Coverage**: '+(qa.coverage??'N/A')+'%','- **Result**: '+(qa.result??'N/A')); }
+          if(gates){
+            L.push('## Release Gates',
+              '- dataQuality: '+gates.dataQuality,
+              '- tests: '+gates.tests,
+              '- slo: '+gates.slo,
+              '- signoff: '+gates.signoff,
+              '- flagStrategy: '+gates.flagStrategy);
+          }
+          fs.writeFileSync('STATUS.md', L.join('\n'));
+          console.log('✅ STATUS.md generated');
+          NODE
+
+      - name: Upload STATUS.md as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: STATUS
+          path: STATUS.md
