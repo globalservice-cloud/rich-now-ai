@@ -2,10 +2,11 @@ name: Weekly Status Report (Artifact only)
 
 on:
   schedule:
-    - cron: "0 1 * * 1"   # 週一 09:00 台北 (UTC+8)
+    - cron: "0 1 * * 1"   # 每週一 09:00 台北 (UTC+8)
   workflow_dispatch:
-  push:
-    paths: ["ai/outputs/**"]
+  workflow_run:
+    workflows: ["CI (Validate → Release Gates)"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -16,45 +17,33 @@ concurrency:
 
 jobs:
   report:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
+        with: { node-version: 18 }
       - name: Generate STATUS.md
         run: |
-          node <<'NODE'
-          const fs = require('fs');
-          const path = require('path');
-          const out = path.join('ai','outputs');
-          const load = f => { try { return JSON.parse(fs.readFileSync(path.join(out,f),'utf8')) } catch { return null } };
-
-          const rfc   = load('rfc.json');
-          const adr   = load('adr.json');
-          const qa    = load('qa-report.json');
-          const gates = load('release-gates.json');
-
-          const L = [];
-          L.push('# Weekly Status');
-          L.push('*Generated:* '+new Date().toISOString());
-          if(rfc){ L.push('## RFC','- **Title**: '+(rfc.title||''),'- **Milestones**: '+JSON.stringify(rfc.milestones||[])); }
-          if(adr){ L.push('## ADR','- **Decision**: '+(adr.decision||'')); }
-          if(qa){  L.push('## QA','- **Coverage**: '+(qa.coverage??'N/A')+'%','- **Result**: '+(qa.result??'N/A')); }
-          if(gates){
-            L.push('## Release Gates',
-              '- dataQuality: '+gates.dataQuality,
-              '- tests: '+gates.tests,
-              '- slo: '+gates.slo,
-              '- signoff: '+gates.signoff,
-              '- flagStrategy: '+gates.flagStrategy);
+          node --input-type=module - <<'NODE'
+          import fs from 'fs';
+          const L=[];
+          const safe=(v)=> (v??'N/A');
+          const p='ai/outputs/release-gates.json';
+          if(fs.existsSync(p)){
+            const g=JSON.parse(fs.readFileSync(p,'utf8'));
+            L.push('# Release Gates');
+            L.push(`- dataQuality: ${safe(g.dataQuality)}`);
+            L.push(`- tests: ${safe(g.tests)}`);
+            L.push(`- slo: ${safe(g.slo)}`);
+            L.push(`- signoff: ${safe(g.signoff)}`);
+            L.push(`- flagStrategy: ${safe(g.flagStrategy)}`);
+          } else {
+            L.push('🟡 no release-gates.json (skipped)');
           }
           fs.writeFileSync('STATUS.md', L.join('\n'));
           console.log('✅ STATUS.md generated');
           NODE
-
       - name: Upload STATUS.md as artifact
         uses: actions/upload-artifact@v4
         with:
